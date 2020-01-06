@@ -1,0 +1,15 @@
+login.html 			登陆
+zhuce.html 			注册
+Administrators.html		聊天界面
+tables.html			管理员数据表
+Message Board.html		留言板
+FAQS/FAQ.html			常见问题
+Modify information.html		修改个人信息
+articles-list.html		搜索查找
+Commentary.html			文章 评论
+Full screen width.html		常见问题
+Others view information page.html 对别人信息查看
+personal.html			个人信息
+Reply page.html 		回复界面
+
+Charitabledonations		慈善募捐
