@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+		<meta charset="utf-8">
+		<link href="/page/login/css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body class="qaz">
+	 <!-----start-main---->
+	 <div class="main">
+		<div class="login-form">
+			<h1 class="qwe">公益之家</h1>
+					<div class="head">
+						<img src="/page/login/images/wu.png" alt=""/>
+					</div>
+				<form>
+						<input type="text" class="text" value="输入账号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入账号';}" >
+						<input type="password" value="输入密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入密码';}">
+						<div class="verificationCodeWrap">
+							<div style="width:100%;">
+							<div id="verificationCode" class="verificationCode" style="width:40%;float:left;">
+								<canvas width="5" height="2" id="verifyCanvas"></canvas>
+								<img id="code_img">
+							</div>
+							<div width:50px;height:25px; id="yzm"style="width:60%;float:left;position:relative;">
+							<button id="yanzheng" style="position: absolute;bottom:15;">获取验证码</button>
+							<script type="text/javascript" src="/page/login/js/yanzhengma.js"></script></div></div>
+							<input type="text" id="verifital_input" class="mui-input" placeholder="请输入验证
+						码">
+					<!--登陆注册和忘记密码-->
+						<div class="submit">
+							<input type="submit" onclick="myFunction()" value="登陆" >
+					</div>
+					<div class="zhuce">
+						<input type="submit" onclick="myFunction()" value="注册" >
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+</html>
