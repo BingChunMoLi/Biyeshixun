@@ -69,16 +69,17 @@ public class UserAddachieve<T> implements Additions<T> {
     public void query(T... t) {
         try {
             Class clazz=Class.forName("com.bingchunmoli.Obj.User");
-            System.out.println(clazz);
             Field[] fields = clazz.getDeclaredFields();
             for (int i = 0;i < fields.length;i++){
-                Field field = fields[i];
-                field.setAccessible(true);
-                try {
-                    System.out.println(field.get(t[1]));
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                }
+                System.out.println(fields[i].getName());
+//                Field field = fields[i];
+//                field.setAccessible(true);
+//                try {
+//                    System.out.println(field.get(t[1]));
+//                    System.out.println(field.getName());
+//                } catch (IllegalAccessException e) {
+//                    e.printStackTrace();
+//                }
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

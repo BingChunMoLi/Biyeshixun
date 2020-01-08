@@ -7,69 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320c7974-fd76-4f60-a208-60f90afc121d" name="Default Changelist" comment="反射查询">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Jinx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apidocs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_13_javadoc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre11_shaded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/SHA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/jquery.gridly.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/sample.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery.gridly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/rainbow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/sample.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Additions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Additions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAdditions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/InputUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/JavaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/JavaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/Test_Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/Test_Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Administrators.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Administrators.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Charitable donations.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Charitable donations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Commentary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Full screen width.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Full screen width.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Message Board.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Message Board.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Modify information.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Modify information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Others view information page.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Others view information page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Reply page.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Reply page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/articles-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/articles-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/js/yanzhengma.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/js/yanzhengma.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/personal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/zhuce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Additions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Additions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAdditions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/InputUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/JavaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/JavaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/Test_Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/Test_Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Additions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Additions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAdditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAdditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Obj/InputUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Test/Test_Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/Test_Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Administrators.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Administrators.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Charitable donations.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Charitable donations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Commentary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Full screen width.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Full screen width.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Message Board.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Message Board.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Modify information.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Modify information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Others view information page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Others view information page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/Reply page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Reply page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/articles-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/articles-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/login/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/login/js/yanzhengma.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/js/yanzhengma.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/personal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/signup/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/signup/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/zhuce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/毕业设计.iml" beforeDir="false" afterPath="$PROJECT_DIR$/毕业设计.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAddachieve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAddachieve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +245,7 @@
       <workItem from="1578383475653" duration="255000" />
       <workItem from="1578405572877" duration="511000" />
       <workItem from="1578408894010" duration="181000" />
-      <workItem from="1578445696671" duration="5580000" />
+      <workItem from="1578445696671" duration="8211000" />
     </task>
     <task id="LOCAL-00001" summary="Link Mysql OK">
       <created>1578283739779</created>
@@ -412,26 +352,26 @@
     </state>
     <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294405094" />
     <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1578279027934" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1578452557866">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1578453462338">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578452557866" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1578452557865">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1578453462338">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990455" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578452557865" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1578452557865">
+    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1578453462338">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990450" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578452557865" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1578452557865">
+    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1578453462338">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990460" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578452557865" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
     <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1578451330695">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

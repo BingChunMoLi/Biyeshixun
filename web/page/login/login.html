@@ -49,12 +49,9 @@
 	 <script type="text/javascript" src="/page/login/js/yanzhengma.js"></script>
 		 <script>
 			  function a(){
-				  var name =$("#name").val();
-				  var pass =$("#pass").val();
-				  var email = $("#email").val();
-					 if ($("#name").val()==null ||$("#name").val()==""){
+				  	if ($("#name").val()==null ||$("#name").val()==""){
 						 alert('请输入用户名或邮箱');
-					 }else if($("#pass").val()==""|| $("#name").val()==null){
+					 }else if($("#pass").val()==""|| $("#pass").val()==null){
 						 alert('请输入密码');
 					 }else if($("#verifital_input").val()==""|| $("#verifital_input").val()==null){
 						 alert('请输入验证码');
@@ -62,14 +59,19 @@
 							 ||	$("#verifital_input").val() === verVal.toLowerCase()
 							 || $("#verifital_input").val() === verVal
 					 ){
-					 	alert('验证码正确');
+
+						 var name =$("#name").val();
+						 var pass =$("#pass").val();
+						 var email = $("#name").val();
+
 					 $.ajax({
 						 url: "/DataProviderController",    //请求的url地址
-						 data: {"name": name,"pass": pass, "email": email},    //参数值
+						 data: {"name": name,"pass": pass, "email": email,"table":user},    //参数值
 						 type: "POST",
 						 dataType: "json", 
 						 success: function (data) {
 							 //请求成功时处理
+							 window.location.href="../../index.html";
 						 }
 					 });
 
@@ -79,8 +81,6 @@
 			  function b() {
 					  window.location.href="../signup/zhuce.html";
 				  };
-
-
 		 </script>
 </body>
 </html>
