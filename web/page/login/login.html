@@ -6,6 +6,7 @@
 		<link href="/page/login/css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="/static/jquery.js"></script>
 </head>
 <body class="qaz">
 	 <!-----start-main---->
@@ -15,29 +16,71 @@
 					<div class="head">
 						<img src="/page/login/images/wu.png" alt=""/>
 					</div>
-				<form>
-						<input type="text" class="text" value="输入账号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入账号';}" >
-						<input type="password" value="输入密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入密码';}">
+
+				<div style="width: 80%;margin: auto;height: 70%;padding-top: 20px;padding-bottom: 20px">
+						<input type="text" class="text" name="name" id="name" placeholder="输入用户名或邮箱" >
+						<input type="password" name="pass" id="pass" placeholder="输入密码">
+
 						<div class="verificationCodeWrap">
 							<div style="width:100%;">
-							<div id="verificationCode" class="verificationCode" style="width:40%;float:left;">
-								<canvas width="5" height="2" id="verifyCanvas"></canvas>
-								<img id="code_img">
+								<div id="verificationCode" class="verificationCode" style="width:40%;margin: auto;padding-bottom: 15px">
+									<canvas width="5" height="2" id="verifyCanvas"></canvas>
+									<img id="code_img">
+
+								</div>
+<!--								<div  id="yzm"style="width:60%;float:left;position:relative;">-->
+<!--&lt;!&ndash;									<button id="yanzheng" style="position: absolute;">获取验证码</button>&ndash;&gt;-->
+<!--									-->
+<!--								</div>-->
 							</div>
-							<div width:50px;height:25px; id="yzm"style="width:60%;float:left;position:relative;">
-							<button id="yanzheng" style="position: absolute;bottom:15;">获取验证码</button>
-							<script type="text/javascript" src="/page/login/js/yanzhengma.js"></script></div></div>
-							<input type="text" id="verifital_input" class="mui-input" placeholder="请输入验证
-						码">
+							<input type="text" id="verifital_input" name="verifital_input" class="mui-input" placeholder="请输入验证码">
+
 					<!--登陆注册和忘记密码-->
-						<div class="submit">
-							<input type="submit" onclick="myFunction()" value="登陆" >
+							<div class="submit" >
+								<input type="button" id="denglu"  name="denglu" value="登陆" onclick="a();">
+							</div>
+							<div class="zhuce">
+								<input type="button" id="zhuche" name="zhuche" value="注册" onclick="b();">
+							</div>
+						</div>
 					</div>
-					<div class="zhuce">
-						<input type="submit" onclick="myFunction()" value="注册" >
-					</div>
-				</form>
 			</div>
 		</div>
+	 <script type="text/javascript" src="/page/login/js/yanzhengma.js"></script>
+		 <script>
+			  function a(){
+				  var name =$("#name").val();
+				  var pass =$("#pass").val();
+				  var email = $("#email").val();
+					 if ($("#name").val()==null ||$("#name").val()==""){
+						 alert('请输入用户名或邮箱');
+					 }else if($("#pass").val()==""|| $("#name").val()==null){
+						 alert('请输入密码');
+					 }else if($("#verifital_input").val()==""|| $("#verifital_input").val()==null){
+						 alert('请输入验证码');
+					 } else if(	$("#verifital_input").val() === verVal.toUpperCase()
+							 ||	$("#verifital_input").val() === verVal.toLowerCase()
+							 || $("#verifital_input").val() === verVal
+					 ){
+					 	alert('验证码正确');
+					 $.ajax({
+						 url: "/DataProviderController",    //请求的url地址
+						 data: {"name": name,"pass": pass, "email": email},    //参数值
+						 type: "POST",
+						 dataType: "json", 
+						 success: function (data) {
+							 //请求成功时处理
+						 }
+					 });
+
+					 }else
+					 {	alert('验证码错误');}
+				 };
+			  function b() {
+					  window.location.href="../signup/zhuce.html";
+				  };
+
+
+		 </script>
 </body>
 </html>

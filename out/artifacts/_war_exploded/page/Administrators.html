@@ -14,22 +14,26 @@
                                            <!-- 管理员页面 -->
 
     <!-- Style Sheet-->
+    <link rel="stylesheet" href="style.css"/>
     <link rel='stylesheet' id='bootstrap-css-css'  href='/css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='responsive-css-css'  href='/css/responsive5152.css?ver=1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='pretty-photo-css-css'  href='/js/prettyphoto/prettyPhotoaeb9.css?ver=3.1.4' type='text/css' media='all' />
     <link rel='stylesheet' id='main-css-css'  href='/css/main5152.css?ver=1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='custom-css-css'  href='/css/custom5152.html?ver=1.0' type='text/css' media='all' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" href="/css/fullcalendar.css" />
-    <link rel="stylesheet" href="/css/maruti-style.css" />
-    <link rel="stylesheet" href="/css/maruti-media.css" class="skin-color" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/js/jquery-1.7.1.js"></script>
+<link href="/css/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/css/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/commonAll.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox-1.3.4.css" media="screen"></link>
+<script type="text/javascript" src="/js/artDialog.js?skin=default"></script>
 </head>
 <!-- Start of Header -->
 <div class="header-wrapper">
   <header>
-          <div class="container"  id="top">
+          <div class="container">
 
 
             <div class="logo-container">
@@ -47,7 +51,7 @@
                       <ul id="menu-top-menu" class="clearfix">
                               <li><a href="/page/login/login.html">登录</a></li>
                               <li><a href="/page/signup/zhuce.html">注册</a></li>
-                              <li><a href="/page/Administrators.html">个人中心</a></li>
+                              <li><a href="/page/Others view information page.html">个人中心</a></li>
                               <li><a href="/page/tables.html">数据库</a>
                               <li><a href="#">主题</a>
                                       <ul class="sub-menu">
@@ -73,175 +77,399 @@
           </div>
   </header>
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/** 新增   **/
+	    $("#addBtn").fancybox({
+	    	'href'  : 'house_edit.html',
+	    	'width' : 733,
+	        'height' : 530,
+	        'type' : 'iframe',
+	        'hideOnOverlayClick' : false,
+	        'showCloseButton' : false,
+	        'onClosed' : function() { 
+	        	window.location.href = 'house_list.html';
+	        }
+	    });
+		
+	    /** 导入  **/
+	    $("#importBtn").fancybox({
+	    	'href'  : '/xngzf/archives/importFangyuan.action',
+	    	'width' : 633,
+	        'height' : 260,
+	        'type' : 'iframe',
+	        'hideOnOverlayClick' : false,
+	        'showCloseButton' : false,
+	        'onClosed' : function() { 
+	        	window.location.href = 'house_list.html';
+	        }
+	    });
+		
+	    /**编辑   **/
+	    $("a.edit").fancybox({
+	    	'width' : 733,
+	        'height' : 530,
+	        'type' : 'iframe',
+	        'hideOnOverlayClick' : false,
+	        'showCloseButton' : false,
+	        'onClosed' : function() { 
+	        	window.location.href = 'house_list.html';
+	        }
+	    });
+	});
+	/** 用户角色   **/
+	var userRole = '';
+
+	/** 模糊查询来电用户  **/
+	function search(){
+		$("#submitForm").attr("action", "house_list.html?page=" + 1).submit();
+	}
+
+	/** 新增   **/
+	function add(){
+		$("#submitForm").attr("action", "/xngzf/archives/luruFangyuan.action").submit();	
+	}
+	 
+	/** Excel导出  **/
+	function exportExcel(){
+		if( confirm('您确定要导出吗？') ){
+			var fyXqCode = $("#fyXq").val();
+			var fyXqName = $('#fyXq option:selected').text();
+//	 		alert(fyXqCode);
+			if(fyXqCode=="" || fyXqCode==null){
+				$("#fyXqName").val("");
+			}else{
+//	 			alert(fyXqCode);
+				$("#fyXqName").val(fyXqName);
+			}
+			$("#submitForm").attr("action", "/xngzf/archives/exportExcelFangyuan.action").submit();	
+		}
+	}
+	
+	/** 删除 **/
+	function del(fyID){
+		// 非空判断
+		if(fyID == '') return;
+		if(confirm("您确定要删除吗？")){
+			$("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();			
+		}
+	}
+	
+	/** 批量删除 **/
+	function batchDel(){
+		if($("input[name='IDCheck']:checked").size()<=0){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'至少选择一条', ok:true,});
+			return;
+		}
+		// 1）取出用户选中的checkbox放入字符串传给后台,form提交
+		var allIDCheck = "";
+		$("input[name='IDCheck']:checked").each(function(index, domEle){
+			bjText = $(domEle).parent("td").parent("tr").last().children("td").last().prev().text();
+// 			alert(bjText);
+			// 用户选择的checkbox, 过滤掉“已审核”的，记住哦
+			if($.trim(bjText)=="已审核"){
+// 				$(domEle).removeAttr("checked");
+				$(domEle).parent("td").parent("tr").css({color:"red"});
+				$("#resultInfo").html("已审核的是不允许您删除的，请联系管理员删除！！！");
+// 				return;
+			}else{
+				allIDCheck += $(domEle).val() + ",";
+			}
+		});
+		// 截掉最后一个","
+		if(allIDCheck.length>0) {
+			allIDCheck = allIDCheck.substring(0, allIDCheck.length-1);
+			// 赋给隐藏域
+			$("#allIDCheck").val(allIDCheck);
+			if(confirm("您确定要批量删除这些记录吗？")){
+				// 提交form
+				$("#submitForm").attr("action", "/xngzf/archives/batchDelFangyuan.action").submit();
+			}
+		}
+	}
+
+	/** 普通跳转 **/
+	function jumpNormalPage(page){
+		$("#submitForm").attr("action", "house_list.html?page=" + page).submit();
+	}
+	
+	/** 输入页跳转 **/
+	function jumpInputPage(totalPage){
+		// 如果“跳转页数”不为空
+		if($("#jumpNumTxt").val() != ''){
+			var pageNum = parseInt($("#jumpNumTxt").val());
+			// 如果跳转页数在不合理范围内，则置为1
+			if(pageNum<1 | pageNum>totalPage){
+				art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'请输入合适的页数，\n自动为您跳到首页', ok:true,});
+				pageNum = 1;
+			}
+			$("#submitForm").attr("action", "house_list.html?page=" + pageNum).submit();
+		}else{
+			// “跳转页数”为空
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'请输入合适的页数，\n自动为您跳到首页', ok:true,});
+			$("#submitForm").attr("action", "house_list.html?page=" + 1).submit();
+		}
+	}
+</script>
+<style>
+	.alt td{ background:black !important;}
+</style>
+</head>
+<body>
+	<form id="submitForm" name="submitForm" action="" method="post">
+		<input type="hidden" name="allIDCheck" value="" id="allIDCheck"/>
+		<input type="hidden" name="fangyuanEntity.fyXqName" value="" id="fyXqName"/>
+		<div id="container">
+			<div class="ui_content">
+				<div class="ui_text_indent">
+					<div id="box_border">
+						<div id="box_top">搜索</div>
+						<div id="box_center">
+							账户
+							<select name="fangyuanEntity.fyXqCode" id="fyXq" class="ui_select01" onchange="getFyDhListByFyXqCode();">
+                                <option value=""
+                                >--请选择--</option>
+                                <option value="6">苏文龙</option>
+                                <option value="77">赵东旭</option>
+                                <option value="83">郑昊宇</option>
+                            </select>
+
+							性别
+							<select name="fangyuanEntity.fyDhCode" id="fyDh" class="ui_select01">
+                                <option value="">--请选择--</option>
+                                <option value="6">男</option>
+                                <option value="77">女</option>
+                            </select>
+							积分
+							<select name="fangyuanEntity.fyHxCode" id="fyHx" class="ui_select01">
+                                <option value="">--请选择--</option>
+                                <option value="76">123</option>
+                                <option value="10">456</option>
+                                <option value="14">741</option>
+                                <option value="71">852</option>
+                            </select>
+                            年龄&nbsp;&nbsp;<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" class="ui_input_txt02" />
+							邮箱&nbsp;&nbsp;<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" class="ui_input_txt02" />
+						</div>
+						<div id="box_bottom">
+							<input type="button" value="查询" class="ui_input_btn01" onclick="search();" /> 
+							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" /> 
+							<input type="button" value="删除" class="ui_input_btn01" onclick="batchDel();" /> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui_content">
+				<div class="ui_tb">
+					<table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+						<tr>
+							<th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />
+							</th>
+							<th>姓名</th>
+							<th>邮箱</th>
+							<th>性别</th>
+							<th>年龄</th>
+							<th>积分</th>
+							<th>注册时间</th>
+							<th>登陆时间</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458579642011" class="acb" /></td>
+								<td>苏文龙</td>
+								<td>123@qq.com</td>
+								<td>男</td>
+								<td>21</td>
+								<td>541</td>
+								<td>2020-1-1</td>
+								<td>2020-1-6</td>
+								<td>在线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a> 
+									<a href="javascript:del('14458579642011');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458625716623" class="acb" /></td>
+								<td>郑浩宇</td>
+								<td>112@qq.om</td>
+								<td>男</td>
+								<td>19</td>
+								<td>82</td>
+								<td>2020-1-1</td>
+								<td>2020-1-2</td>
+								<td>离线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458625716623" class="edit">编辑</a> 
+									<a href="javascript:del('14458625716623');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458592537463" class="acb" /></td>
+								<td>龙小美</td>
+								<td>dfg5411@qq.com</td>
+								<td>女</td>
+								<td>19</td>
+								<td>111</td>
+								<td>2016-12-21</td>
+								<td>2020-1-1</td>
+								<td>离线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458592537463" class="edit">编辑</a> 
+									<a href="javascript:del('14458592537463');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458632171244" class="acb" /></td>
+								<td>亚索</td>
+								<td>521122@qq.cssmoban</td>
+								<td>男</td>
+								<td>26</td>
+								<td>7416</td>
+								<td>2000-2-2</td>
+								<td>2020-1-1</td>
+								<td>在线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458632171244" class="edit">编辑</a> 
+									<a href="javascript:del('14458632171244');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458599318263" class="acb" /></td>
+								<td>谢广坤</td>
+								<td>611@qq.com</td>
+								<td>男</td>
+								<td>11</td>
+								<td>541</td>
+								<td>2012-4-27</td>
+								<td>2020-1-1</td>
+								<td>在线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458599318263" class="edit">编辑</a> 
+									<a href="javascript:del('14458599318263');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458638753194" class="acb" /></td>
+								<td>小花</td>
+								<td>132@qq.com</td>
+								<td>女</td>
+								<td>39</td>
+								<td>55</td>
+								<td>2015-4-25</td>
+								<td>20201-1-1</td>
+								<td>离线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458638753194" class="edit">编辑</a> 
+									<a href="javascript:del('14458638753194');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458606278350" class="acb" /></td>
+								<td>萧炎</td>
+								<td>5411@qq.com</td>
+								<td>6男</td>
+								<td>62</td>
+								<td>512</td>
+								<td>2013-6-31</td>
+								<td>2020-1-1</td>
+								<td>离线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458606278350" class="edit">编辑</a> 
+									<a href="javascript:del('14458606278350');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458644830000" class="acb" /></td>
+								<td>路飞</td>
+								<td>142@qq.com</td>
+								<td>男</td>
+								<td>21</td>
+								<td>8412</td>
+								<td>2017-9-30</td>
+								<td>2020-1-1</td>
+								<td>离线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458644830000" class="edit">编辑</a> 
+									<a href="javascript:del('14458644830000');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458612828548" class="acb" /></td>
+								<td>晓红</td>
+								<td>151@.com</td>
+								<td>女</td>
+								<td>16</td>
+								<td>244</td>
+								<td>2011-6-29</td>
+								<td>2020-1-1</td>
+								<td>在线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458612828548" class="edit">编辑</a> 
+									<a href="javascript:del('14458612828548');">删除</a>
+								</td>
+							</tr>
+						
+							<tr>
+								<td><input type="checkbox" name="IDCheck" value="14458619251417" class="acb" /></td>
+								<td>花无缺</td>
+								<td>215@qq.com</td>
+								<td>男</td>
+								<td>25</td>
+								<td>2100</td>
+								<td>2019-6-24</td>
+								<td>2020-1-4</td>
+								<td>离线</td>
+								<td>
+									<a href="house_edit.html?fyID=14458619251417" class="edit">编辑</a> 
+									<a href="javascript:del('14458619251417');">删除</a>
+								</td>
+							</tr>
+						
+					</table>
+				</div>
+				<div class="ui_tb_h30">
+					<div class="ui_flt" style="height: 30px; line-height: 30px;">
+						共有
+						<span class="ui_txt_bold04">7</span>
+						条记录，当前第
+						<span class="ui_txt_bold04">1
+						/
+						6</span>
+						页
+					</div>
+					<div class="ui_frt">
+						<!--    如果是第一页，则只显示下一页、尾页 -->
+						
+							<input type="button" value="首页" class="ui_input_btn01" />
+							<input type="button" value="上一页" class="ui_input_btn01" />
+							<input type="button" value="下一页" class="ui_input_btn01"
+								onclick="jumpNormalPage(2);" />
+							<input type="button" value="尾页" class="ui_input_btn01"
+								onclick="jumpNormalPage(6);" />
+						
+						
+						
+						<!--     如果是最后一页，则只显示首页、上一页 -->
+						
+						转到第<input type="text" id="jumpNumTxt" class="ui_input_txt01" />页
+							 <input type="button" class="ui_input_btn01" value="跳转" onclick="jumpInputPage(6);" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
 
 
-
-
-<div id="content">
-  <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span12"> 
-          
-            <div class="row-fluid">
-              
-                <div class="chart">
-
-                </div>
-              
-            </div>
-          </div></div>
-        <div class="row-fluid">
-              <div class="span6">
-                <div class="widget-box">
-                  <div class="widget-title"><span class="icon"><i class="icon-file"></i></span>
-                    <h5>最新帖子</h5>
-                    </div>
-                  <div class="widget-content nopadding">
-                    <ul class="recent-posts">
-                      <li>
-                        <div class="user-thumb"> <img width="40" height="40" alt="User" src="/images/demo/av1.jpg"> </div>
-                        <div class="article-post"> <span class="user-info"> id: john Deo / 日期: 2 Aug 2012 / 时间:09:27 AM </span>
-                          <p><a href="/index.html">帖子内容</a> </p>
-                          </div>
-                      </li>
-                      <li>
-                        <div class="user-thumb"> <img width="40" height="40" alt="User" src="/images/demo/av2.jpg"> </div>
-                        <div class="article-post"> <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
-                          <p><a href="/index.html">内容</a> </p>
-                          </div>
-                      </li>
-                      <li>
-                        <div class="user-thumb"> <img width="40" height="40" alt="User" src="/images/demo/av4.jpg"> </div>
-                        <div class="article-post"> <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
-                          <p><a href="/index.html">内容</a> </p>
-                          </div>
-                         
-                     <li><button class="btn btn-warning btn-mini">全部查看</button></li>
-                    </ul> 
-                  </div>
-                </div>
-              </div>
-              
-              <div class="span6">
-                <div class="widget-box">
-                  <div class="widget-title"> <span class="icon"> <i class="icon-refresh"></i> </span>
-                    <h5>时实更新</h5>
-                  </div>
-                  <div class="widget-content nopadding updates">
-                    <div class="new-update clearfix"><i class="icon-ok-sign"></i>
-                      <div class="update-done"><a title="" href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a> <span>dolor sit amet, consectetur adipiscing eli</span> </div>
-                      <div class="update-date"><span class="update-day">20</span>jan</div>
-                    </div>
-                    <div class="new-update clearfix"> <i class="icon-gift"></i> <span class="update-notice"> <a title="" href="#"><strong>Congratulation Maruti, Happy Birthday </strong></a> <span>many many happy returns of the day</span> </span> <span class="update-date"><span class="update-day">11</span>jan</span> </div>
-                    <div class="new-update clearfix"> <i class="icon-move"></i> <span class="update-alert"> <a title="" href="#"><strong>Maruti is a Responsive Admin theme</strong></a> <span>But already everything was solved. It will ...</span> </span> <span class="update-date"><span class="update-day">07</span>Jan</span> </div>
-                    <div class="new-update clearfix"> <i class="icon-leaf"></i> <span class="update-done"> <a title="" href="#"><strong>Envato approved Maruti Admin template</strong></a> <span>i am very happy to approved by TF</span> </span> <span class="update-date"><span class="update-day">05</span>jan</span> </div>
-                    <div class="new-update clearfix"> <i class="icon-question-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>I am alwayse here if you have any question</strong></a> <span>we glad that you choose our template</span> </span> <span class="update-date"><span class="update-day">01</span>jan</span> </div>
-                  </div>
-                </div>
-              </div>
-              
-              </div> 
-             
-          
-      </div>
-    </div>
-    <div class="widget-box">
-      <div class="widget-content">
-        <div class="row-fluid">
-          <div class="span6">
-            <div class="alert alert-success">我们在这里设置了聊天框!!<a href="#" class="close" data-dismiss="alert">×</a></div>
-            <div class="widget-box widget-chat">
-              <div class="widget-title"> <span class="icon"> <i class="icon-comment"></i> </span>
-                <h5>聊天框</h5>
-              </div>
-              <div class="widget-content nopadding">
-                <div class="chat-users panel-right2">
-                  <div class="panel-title">
-                    <h5>我的朋友</h5>
-                  </div>
-                  <div class="panel-content nopadding">
-                    <ul class="contact-list">
-                      <li id="user-Sunil" class="online"><a href=""><img alt="" src="/images/demo/av1.jpg" /> <span>赵东旭</span></a></li>
-                      <li id="user-Laukik"><a href=""><img alt="" src="/images/demo/av2.jpg" /> <span>马小宝</span></a></li>
-                      <li id="user-vijay" class="online new"><a href=""><img alt="" src="/images/demo/av3.jpg" /> <span>郑号宇</span></a><span class="msg-count badge badge-info">3</span></li>
-                      <li id="user-Jignesh" class="online"><a href=""><img alt="" src="/images/demo/av4.jpg" /> <span>苏文龙</span></a></li>
-                      <li id="user-Malay" class="online"><a href=""><img alt="" src="/images/demo/av5.jpg" /> <span>古仁杰</span></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chat-content panel-left2">
-                  <div class="chat-messages" id="chat-messages">
-                    <div id="chat-messages-inner"></div>
-                  </div>
-                  <div class="chat-message well">
-                    <button class="btn btn-success">发送</button>
-                    <span class="input-box">
-                    <input type="text" name="msg-box" id="msg-box" />
-                    </span> </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="accordion" id="collapse-group">
-              <div class="accordion-group widget-box">
-                <div class="accordion-heading">
-                  <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGOne" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
-                    <h5>Accordion Example 1</h5>
-                    </a> </div>
-                </div>
-                <div class="collapse in accordion-body" id="collapseGOne">
-                  <div class="widget-content"> It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </div>
-                </div>
-              </div>
-              <div class="accordion-group widget-box">
-                <div class="accordion-heading">
-                  <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGTwo" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
-                    <h5>Accordion Example 2</h5>
-                    </a> </div>
-                </div>
-                <div class="collapse accordion-body" id="collapseGTwo">
-                  <div class="widget-content">And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.</div>
-                </div>
-              </div>
-              <div class="accordion-group widget-box">
-                <div class="accordion-heading">
-                  <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
-                    <h5>Accordion Example 3</h5>
-                    </a> </div>
-                </div>
-                <div class="collapse accordion-body" id="collapseGThree">
-                  <div class="widget-content"> Waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="widget-box">
-              <div class="widget-title">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#tab1">Tab1</a></li>
-                  <li><a data-toggle="tab" href="#tab2">Tab2</a></li>
-                  <li><a data-toggle="tab" href="#tab3">Tab3</a></li>
-                </ul>
-              </div>
-              <div class="widget-content tab-content">
-                <div id="tab1" class="tab-pane active"><p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </p>
-                  <img src="/images/demo/demo-image1.jpg" alt="demo-image"/></div>
-                <div id="tab2" class="tab-pane">
-                  <img src="/images/demo/demo-image2.jpg" alt="demo-image"/><p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </p></div>
-                <div id="tab3" class="tab-pane"><p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </p>
-                  <img src="/images/demo/demo-image3.jpg" alt="demo-image"/></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
 <!-- Footer Bottom -->
 <div id="footer-bottom-wrapper">
   <div id="footer-bottom" class="container">
@@ -280,40 +508,7 @@
 <script type='text/javascript' src='/js/jquery.formd471.js?ver=3.18'></script>
 <script type='text/javascript' src='/js/jquery.validate.minfc6b.js?ver=1.10.0'></script>
 <script type='text/javascript' src='/js/custom5152.js?ver=1.0'></script>
-<script src="/js/excanvas.min.js"></script> 
-<script src="/js/jquery.min.js"></script> 
-<script src="/js/jquery.ui.custom.js"></script> 
-<script src="/js/bootstrap.min.js"></script> 
-<script src="/js/jquery.flot.min.js"></script> 
-<script src="/js/jquery.flot.resize.min.js"></script> 
-<script src="/js/jquery.peity.min.js"></script> 
-<script src="/js/fullcalendar.min.js"></script> 
-<script src="/js/maruti.js"></script> 
-<script src="/js/maruti.dashboard.js"></script> 
-<script src="/js/maruti.chat.js"></script> 
-<script type="text/javascript">
-  // This function is called from the pop-up menus to transfer to
-  // a different page. Ignore if the value returned is a null string:
-  function goPage (newURL) {
 
-      // if url is empty, skip the menu dividers and reset the menu selection to default
-      if (newURL != "") {
-      
-          // if url is "-", it is this page -- reset the menu:
-          if (newURL == "-" ) {
-              resetMenu();            
-          } 
-          // else, send page to designated URL            
-          else {  
-            document.location.href = newURL;
-          }
-      }
-  }
-
-// resets the menu selection upon entry to this page:
-function resetMenu() {
-   document.gomenu.selector.selectedIndex = 2;
-}
 </script>
 </body>
 

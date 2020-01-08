@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/commons-codec-1.13/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/adaptive" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/alwaysencrypted" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/azureactivedirectoryauthentication" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/connections" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/constrained" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/dataclassification" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/datatypes" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/resultsets" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/sparse" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF/lib" recursive="false" />
+  </library>
+</component>

@@ -2,7 +2,6 @@ package com.bingchunmoli.Test;
 
 
 import com.bingchunmoli.Dao.UserAdditions;
-import com.bingchunmoli.Obj.InputUser;
 import com.bingchunmoli.Obj.User;
 
 import javax.servlet.ServletException;
@@ -32,11 +31,20 @@ public class Test_Servlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
+        boolean flag = false;
+        HttpSession s = request.getSession();
         String user = request.getParameter("user");
         User User = new User();
         UserAdditions ua = new UserAdditions();
-        ua.Search_user(user);
+        flag = ua.Search_user(user);
+        if (flag){
+            s.setAttribute("user",User.getUID());
+            out.println("有");
+        }else{
+            out.print("查无此人");
+        }
         out.print(User.getUID());
         String IP = request.getRemoteAddr();
         System.out.println(IP);

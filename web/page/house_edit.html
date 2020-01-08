@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>信息管理</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/js/jquery-1.7.1.js"></script>
+<link href="/css/basic_layout.css" rel="stylesheet" type="text/css">
+<link href="/css/common_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/commonAll.js"></script>
+<script type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+<script src="/js/WdatePicker.js" type="text/javascript" defer="defer"></script>
+<script type="text/javascript" src="/js/artDialog.js?skin=default"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		 * 提交
+		 */
+		$("#submitbutton").click(function() {
+			if(validateForm()){
+				checkFyFhSubmit();
+			}
+		});
+		
+		/*
+		 * 取消
+		 */
+		$("#cancelbutton").click(function() {
+			/**  关闭弹出iframe  **/
+			window.parent.$.fancybox.close();
+		});
+		
+		var result = 'null';
+		if(result =='success'){
+			/**  关闭弹出iframe  **/
+			window.parent.$.fancybox.close();
+		}
+	});
+	
+	/** 检测用户是否存在  **/
+	function checkFyFh(){
+		// 分别获取小区编号、栋号、层号、房号
+		var fyID = $('#fyID').val();
+		var fyXqCode = $("#fyXq").val();
+		var fyDh = $("#fyDh").val();
+		var fyCh = $("#fyCh").val();	
+		var fyFh = $("#fyFh").val();
+		if(fyXqCode!="" && fyDh!="" && fyCh!="" && fyFh!=""){
+			// 赋值
+			$("#fyZldz").val($('#fyDh option:selected').text() + fyCh + "-" + fyFh);
+			// 异步判断是否存在，如果已存在，给用户已提示哦
+			$.ajax({
+				type:"POST",
+				url:"checkFyFhIsExists.action",
+				data:{"fangyuanEntity.fyID":fyID,"fangyuanEntity.fyXqCode":fyXqCode, "fangyuanEntity.fyDhCode":fyDh, "fangyuanEntity.fyCh":fyCh, "fangyuanEntity.fyFh":fyFh},
+				dataType : "text",
+				success:function(data){
+// 					alert(data);
+					// 如果返回数据不为空，
+					if(data=="1"){
+						 art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'该用户在系统中已经存在哦，\n请创建其他用户', ok:true,});
+						 $("#fyFh").css("background", "#EEE");
+						 $("#fyFh").focus();
+						 return false;
+					}
+				}
+			});
+		}
+	}
+	
+	/** 检测用户账号是否存在并提交form  **/
+	function checkFyFhSubmit(){
+		// 分别获取
+		var fyID = $('#fyID').val();
+		var fyXqCode = $("#fyXq").val();
+		var fyDh = $("#fyDh").val();
+		var fyCh = $("#fyCh").val();	
+		var fyFh = $("#fyFh").val();
+		if(fyXqCode!="" && fyDh!="" && fyCh!="" && fyFh!=""){
+			// 赋值
+			$("#fyZldz").val($('#fyDh option:selected').text()  + fyCh + "-" + fyFh);
+			// 异步判断是否存在，如果已存在，给用户已提示哦
+			$.ajax({
+				type:"POST",
+				url:"checkFyFhIsExists.action",
+				data:{"fangyuanEntity.fyID":fyID,"fangyuanEntity.fyXqCode":fyXqCode, "fangyuanEntity.fyDhCode":fyDh, "fangyuanEntity.fyCh":fyCh, "fangyuanEntity.fyFh":fyFh},
+				dataType : "text",
+				success:function(data){
+// 					alert(data);
+					// 如果返回数据不为空，更改“信息”
+					if(data=="1"){
+						 art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'该用户在系统中已经存在哦，\n请维护其他用户数据', ok:true,});
+						 $("#fyFh").css("background", "#EEE");
+						 $("#fyFh").focus();
+						 return false;
+					}else{
+						$("#submitForm").attr("action", "/xngzf/archives/saveOrUpdateFangyuan.action").submit();
+					}
+				}
+			});
+		}
+		return true;
+	}
+	
+	/** 表单验证  **/
+	function validateForm(){
+		if($("#fyXqName").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写姓名', ok:true,});
+			return false;
+		}
+		if($("#fyDh").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写性别', ok:true,});
+			return false;
+		}
+		if($("#fyCh").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写积分', ok:true,});
+			return false;
+		}
+		if($("#fyFh").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写年龄', ok:true,});
+			return false;
+		}
+		if($("#fyZongMj").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写邮箱', ok:true,});
+			return false;
+		}
+		if($("#fyJizuMj").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写基金', ok:true,});
+			return false;
+		}
+		if($("#fyZldz").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写账号', ok:true,});
+			return false;
+		}
+		return true;
+		if($("#fyZldz").val()==""){
+			art.dialog({icon:'error', title:'友情提示', drag:false, resize:false, content:'填写密码', ok:true,});
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<body>
+<form id="submitForm" name="submitForm" action="/xngzf/archives/initFangyuan.action" method="post">
+	<input type="hidden" name="fyID" value="14458625716623" id="fyID"/>
+	<div id="container">
+		<div id="nav_links">
+			当前位置：基础数据&nbsp;>&nbsp;<span style="color: #1A5CC6;">用户信息</span>
+			<div id="page_close">
+				<a href="javascript:parent.$.fancybox.close();">
+					<img src="/images/page_close.png" width="20" height="20" style="vertical-align: text-top;"/>
+				</a>
+			</div>
+		</div>
+		<div class="ui_content">
+			<table  cellspacing="0" cellpadding="0" width="100%" align="left" border="0">
+				<tr>
+					<td class="ui_text_rt" width="80">姓名</td>
+					<td class="ui_text_lt">
+						<select name="fangyuanEntity.fyXqCode" id="fyXq" class="ui_select01" onchange="getFyDhListByFyXqCode();">
+                            <option value="">--请选择--</option>
+                            <option value="6" selected="selected">苏文龙</option>
+                            <option value="77">赵东旭</option>
+                            <option value="83">郑浩宇</option>
+                        </select>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_rt">性别</td>
+					<td class="ui_text_lt">
+						<select name="fangyuanEntity.fyDhCode" id="fyDh" class="ui_select01">
+                            <option value="">--请选择--</option>
+                            <option value="16" selected="selected">男</option>
+                            <option value="17">女</option>
+                        </select>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_rt">积分</td>
+					<td class="ui_text_lt">
+						<input type="text" id="fyZongMj" name="fangyuanEntity.fyZongMj"  value="67.5" class="ui_input_txt01"/>
+					</td>		
+				</tr>
+		
+				</tr>
+				<tr>
+					<td class="ui_text_rt">年龄</td>
+					<td class="ui_text_lt">
+						<input type="text" id="fyJizuMj" name="fangyuanEntity.fyJizuMj" value="21" class="ui_input_txt01"/>
+					</td>
+
+				<tr>
+					<td class="ui_text_rt">邮箱</td>
+					<td class="ui_text_lt">
+						<select name="fangyuanEntity.fyHxCode" id="submitForm_fangyuanEntity_fyHxCode" class="ui_select01">
+                            <option value="">--请选择--</option>
+                            <option value="76" selected="selected">dhsdf@qq.com</option>
+                            <option value="10">123@.com</option>
+                            <option value="14">vijbrn@qq.com</option>
+                            <option value="71">sdf4@qq.com</option>
+                        </select>
+					</td>
+				</tr>	
+					<td class="ui_text_rt">基金</td>
+				<td class="ui_text_lt">
+					<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" value="36000￥" class="ui_input_txt02"/>
+				</td>
+			</tr>
+				<tr>
+					<td class="ui_text_rt">账号</td>
+					<td class="ui_text_lt">
+						<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" value="123" class="ui_input_txt02"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="ui_text_rt">密码</td>
+					<td class="ui_text_lt">
+						<input type="text" id="fyPsdz" name="fangyuanEntity.fyPsdz" value="-----" class="ui_input_txt02"/>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td class="ui_text_lt">
+						&nbsp;<input id="submitbutton" type="button" value="提交" class="ui_input_btn01"/>
+						&nbsp;<input id="cancelbutton" type="button" value="取消" class="ui_input_btn01"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</form>
+</body>
+</html>

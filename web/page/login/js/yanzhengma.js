@@ -63,6 +63,9 @@ function convertCanvasToImage (canvas) {
     return image;
 }
 
+window.onload =function(){
+    resetCode();
+}
 // 点击图片刷新
 document.getElementById('code_img').onclick = function() {
     resetCode();
@@ -81,11 +84,13 @@ function resetCode () {
     verVal = drawCode();
 }
 
-//验证验证码
-document.getElementById('yanzheng').onclick = function() {
-    if(document.getElementById('verifital_input').value === verVal.toUpperCase() || document.getElementById('verifital_input').value === verVal.toLowerCase() || ocument.getElementById('verifital_input').value === verVal){
-        alert('正确')
-    }else{
-        alert('错误');
-    }
-}
+// 验证验证码
+// document.getElementById('yanzheng').onclick = function() {
+//     if(document.getElementById('verifital_input').value === verVal.toUpperCase()
+//         || document.getElementById('verifital_input').value === verVal.toLowerCase()
+//         || document.getElementById('verifital_input').value === verVal){
+//         alert('正确')
+//     }else{
+//         alert('错误');
+//     }
+// }

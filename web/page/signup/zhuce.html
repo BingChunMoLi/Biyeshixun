@@ -15,17 +15,18 @@
 					<div class="head">
 						<img src="/page/signup/images/wu.png" alt=""/>
 					</div>
-				<form>
-						<input type="text" class="text" value="输入账号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入账号';}" >
-						<input type="text" class="text" value="输入密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入密码';}" >
-						<input type="text" class="text" value="输入手机号码号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入手机号码号';}" >
-						<input type="text" class="text" value="输入邮箱啊╭(╯3╰)╮" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入邮箱啊╭(╯3╰)╮';}" >
+				<div style="padding-bottom: 20px;padding-top: 40px;margin: auto;width: 80%;height: 80%">
 
+						<input type="text" class="text" id="name" name="name" placeholder="输入账号">
+						<input type="password" class="text" id="pass"  name="pass" placeholder="输入密码">
+						<input type="password" class="text" placeholder="确认密码">
+						<input type="email" class="text" id="email" name="email" placeholder="输入邮箱啊╭(╯3╰)╮">
 					<!--注册-->
 					<div class="zhuce">
-						<input type="submit" onclick="myFunction()" value="注册账户" >
+						<input type="submit" id="GetName" name="GetName" value="注册账户" >
 					</div>
-				</form>
+
+				</div>
 			</div>
 		</div>
 </body>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="mssql-jdbc-7.4.1.jre11-shaded">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre11-shaded.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre12-shaded.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre8-shaded.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

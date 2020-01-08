@@ -20,8 +20,9 @@ import java.sql.SQLException;
  * @UpdateRemark: [说明本次修改内容]
  */
 public class UserAdditions {
-    public void Search_user(String Input_user) {
-//        boolean flag = false;                               //boolean 判断是否为空返回值用
+    public boolean Search_user(String Input_user) {
+        boolean flag = false;                               //boolean 判断是否为空返回值用
+        Integer UID = null;
         User user = new User();                             //new一个用户对象
         Connection conn = null;                             //初始化连接
         conn = Link.getConnection();                        //得到数据库链接
@@ -29,15 +30,19 @@ public class UserAdditions {
         PreparedStatement ptmt = null;                      //预定义
         try {
             ptmt = conn.prepareStatement(sql);              //预编译sql
-            ptmt.setString(1,Input_user);            //传入名字参数
+            ptmt.setString(1,Input_user);   //传入名字参数
             ResultSet rs = ptmt.executeQuery();             //ResultSet结果集
             while (rs.next()){
-                user.setUID(rs.getInt("UID"));
-                System.out.println(rs.getInt("UID"));
-                System.out.println(user.getUID());
+                UID = rs.getInt("UID");
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        if (UID != null){
+            flag = true;
+        }else{
+            flag = false;
+        }
+        return flag;
     }
 }

@@ -6,35 +6,69 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320c7974-fd76-4f60-a208-60f90afc121d" name="Default Changelist" comment="Link Mysql OK">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Obj/InputUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/Test_Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/tx.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Administrators.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Charitable donations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Commentary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Full screen width.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Message Board.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Modify information.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/Reply page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/page/personal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/网页定义.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="320c7974-fd76-4f60-a208-60f90afc121d" name="Default Changelist" comment="反射查询">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Jinx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apidocs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_13_javadoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre11_shaded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/SHA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/jquery.gridly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.gridly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/rainbow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/sample.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Dao/Additions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Dao/Link.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Obj/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Obj/Userimage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Obj/guanggao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Obj/money.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Obj/pinglun.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.bingchunmoli/Obj/tiezi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Additions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Additions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAdditions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/InputUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/JavaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/JavaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/Test_Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/Test_Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Administrators.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Administrators.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Charitable donations.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Charitable donations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Commentary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Full screen width.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Full screen width.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Message Board.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Message Board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Modify information.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Modify information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Others view information page.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Others view information page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Reply page.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Reply page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/articles-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/articles-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/js/yanzhengma.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/js/yanzhengma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/zhuce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Additions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Additions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAdditions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/InputUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/JavaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/JavaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/Test_Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/Test_Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Additions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Additions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAdditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAdditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Obj/InputUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Test/Test_Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/Test_Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Administrators.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Administrators.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Charitable donations.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Charitable donations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Commentary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Full screen width.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Full screen width.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Message Board.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Message Board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Modify information.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Modify information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Others view information page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Others view information page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Reply page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Reply page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/articles-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/articles-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/js/yanzhengma.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/js/yanzhengma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/signup/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/signup/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/zhuce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/tables.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/毕业设计.iml" beforeDir="false" afterPath="$PROJECT_DIR$/毕业设计.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +87,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Test@blog.bingchunmoli.com" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Test@blog.bingchunmoli.com" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Test@blog.bingchunmoli.com" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -91,9 +141,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre8.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -103,8 +153,19 @@
       <recent name="com.bingchunmoli" />
       <recent name="com.bingchunmoli.Util" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\Biyesheji\web\WEB-INF" />
+      <recent name="D:\Github\Biyesheji\src\com\bingchunmoli\Util" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bingchunmoli.Test.JavaTest" />
+      <module name="毕业设计" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -179,6 +240,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -192,17 +257,12 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:Test@blog.bingchunmoli.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:Test@blog.bingchunmoli.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4fe4b98f" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4996b42f" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -234,8 +294,27 @@
       <workItem from="1578216148976" duration="1647000" />
       <workItem from="1578217845349" duration="592000" />
       <workItem from="1578272970338" duration="4285000" />
-      <workItem from="1578278575658" duration="4712000" />
+      <workItem from="1578278575658" duration="4978000" />
+      <workItem from="1578288112376" duration="5379000" />
+      <workItem from="1578294242977" duration="191000" />
+      <workItem from="1578294556214" duration="7264000" />
+      <workItem from="1578302638291" duration="714000" />
+      <workItem from="1578303480897" duration="499000" />
+      <workItem from="1578367080593" duration="621000" />
+      <workItem from="1578372624734" duration="3918000" />
+      <workItem from="1578383475653" duration="255000" />
+      <workItem from="1578405572877" duration="511000" />
+      <workItem from="1578408894010" duration="181000" />
+      <workItem from="1578445696671" duration="5580000" />
     </task>
+    <task id="LOCAL-00001" summary="Link Mysql OK">
+      <created>1578283739779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578283739779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +323,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -253,20 +357,36 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Link Mysql OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Link Mysql OK" />
+    <MESSAGE value="反射查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="反射查询" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="90" key="#Deployment" timestamp="1578022784532">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="392" y="90" key="#Deployment/62.0.1474.864@62.0.1474.864" timestamp="1578022784532" />
-    <state x="210" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578280966169">
+    <state x="210" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578296724281">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="210" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578296724281" />
     <state x="210" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1578280966169" />
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1578374250329">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578295765753" />
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1578374250329" />
+    <state x="485" y="248" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578296721716">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="485" y="248" key="#com.intellij.ide.util.TreeClassChooserDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578296721716" />
     <state x="579" y="316" width="439" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578217799608">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -275,97 +395,134 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="572" y="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/62.0.1474.864@62.0.1474.864" timestamp="1578215731631" />
-    <state x="403" y="25" key="CommitChangelistDialog2" timestamp="1578283909959">
+    <state x="681" y="134" key="#xdebugger.evaluate" timestamp="1578302878716">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="403" y="25" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1578283909959" />
-    <state x="498" y="179" key="FileChooserDialogImpl" timestamp="1578279027934">
+    <state x="681" y="134" key="#xdebugger.evaluate/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578302878716" />
+    <state x="403" y="25" key="CommitChangelistDialog2" timestamp="1578452568388">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="403" y="25" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1578452568388" />
+    <state x="576" y="153" key="DetectedRootsChooserDialog" timestamp="1578294371039">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="576" y="153" key="DetectedRootsChooserDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294371039" />
+    <state x="498" y="179" key="FileChooserDialogImpl" timestamp="1578294405094">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294405094" />
     <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1578279027934" />
-    <state width="981" height="224" key="GridCell.Tab.0.bottom" timestamp="1578283054968">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1578452557866">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578283054968" />
-    <state width="981" height="224" key="GridCell.Tab.0.center" timestamp="1578283054967">
+    <state width="981" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578452557866" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1578452557865">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578283054967" />
-    <state width="981" height="224" key="GridCell.Tab.0.left" timestamp="1578283054967">
+    <state width="981" height="224" key="GridCell.Tab.0.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990455" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578452557865" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1578452557865">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578283054967" />
-    <state width="981" height="224" key="GridCell.Tab.0.right" timestamp="1578283054967">
+    <state width="981" height="224" key="GridCell.Tab.0.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990450" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578452557865" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1578452557865">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578283054967" />
-    <state width="981" height="224" key="GridCell.Tab.1.bottom" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.0.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990460" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578452557865" />
+    <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1578451330695">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.1.center" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.1.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
+    <state width="1431" height="277" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
+    <state width="1431" height="277" key="GridCell.Tab.1.center" timestamp="1578451330695">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.1.left" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.1.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
+    <state width="1431" height="277" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
+    <state width="1431" height="277" key="GridCell.Tab.1.left" timestamp="1578451330695">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.1.right" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.1.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
+    <state width="1431" height="277" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
+    <state width="1431" height="277" key="GridCell.Tab.1.right" timestamp="1578451330695">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.2.bottom" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.1.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
+    <state width="1431" height="277" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
+    <state width="981" height="224" key="GridCell.Tab.2.bottom" timestamp="1578303990464">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.2.center" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.2.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990464" />
+    <state width="981" height="224" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
+    <state width="981" height="224" key="GridCell.Tab.2.center" timestamp="1578303990462">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.2.left" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.2.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
+    <state width="981" height="224" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
+    <state width="981" height="224" key="GridCell.Tab.2.left" timestamp="1578303990462">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.2.right" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.2.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
+    <state width="981" height="224" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
+    <state width="981" height="224" key="GridCell.Tab.2.right" timestamp="1578303990463">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.3.bottom" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.2.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990463" />
+    <state width="981" height="224" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
+    <state width="981" height="224" key="GridCell.Tab.3.bottom" timestamp="1578283964434">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.3.center" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578283964434" />
+    <state width="981" height="224" key="GridCell.Tab.3.center" timestamp="1578283964430">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.3.left" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
+    <state width="981" height="224" key="GridCell.Tab.3.left" timestamp="1578283964430">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
-    <state width="981" height="224" key="GridCell.Tab.3.right" timestamp="1578282835445">
+    <state width="981" height="224" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
+    <state width="981" height="224" key="GridCell.Tab.3.right" timestamp="1578283964434">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1578282835445" />
+    <state width="981" height="224" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1578283964434" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1578020826779">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/62.0.1474.864@62.0.1474.864" timestamp="1578020826779" />
-    <state x="301" y="13" key="SettingsEditor" timestamp="1578279030207">
+    <state x="301" y="13" key="SettingsEditor" timestamp="1578294409336">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="301" y="13" key="SettingsEditor/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294409336" />
     <state x="301" y="13" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1578279030207" />
     <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1578022093184">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1578022093184" />
-    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578281301945">
+    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578447395669">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone/62.0.1474.864@62.0.1474.864" timestamp="1578281301945" />
-    <state x="480" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1578278613285">
+    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone/62.0.1474.864@62.0.1474.864" timestamp="1578447395669" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1578445695841">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1578278613285" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303480038" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1578445695841" />
+    <state x="-1595" y="129" width="1011" height="571" key="dock-window-1" timestamp="1578292758909">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="-1923" y="21" width="1011" height="599" maximized="true" key="dock-window-1/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578290819719" />
+    <state x="-1595" y="129" width="1011" height="571" key="dock-window-1/62.0.1474.864@62.0.1474.864" timestamp="1578292758909" />
+    <state x="-1871" y="-6" width="1213" height="735" maximized="true" key="dock-window-2" timestamp="1578294570465">
+      <screen x="-1920" y="0" width="1280" height="680" />
+    </state>
+    <state x="-1871" y="-6" width="1213" height="735" maximized="true" key="dock-window-2/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294570465" />
+    <state x="-1637" y="0" width="1011" height="735" maximized="true" key="dock-window-2/62.0.1474.864@62.0.1474.864" timestamp="1578292758909" />
+    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1578448630575">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1578448630575" />
   </component>
 </project>

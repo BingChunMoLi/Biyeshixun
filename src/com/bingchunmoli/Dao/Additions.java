@@ -5,26 +5,26 @@ import java.util.*;
 /**
  * 增删改查
  */
-public interface Additions {
+public interface Additions <T>{
 
     /**
      * 
      */
-    public void add();
+    public void add(T... t);
 
     /**
      * 
      */
-    public void update();
+    public void update(T... t);
 
     /**
      * 
      */
-    public void del();
+    public void del(T... t);
 
     /**
      * 
      */
-    public void query();
+    public void query(T... t);
 
 }

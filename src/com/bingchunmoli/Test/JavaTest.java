@@ -1,6 +1,9 @@
 package com.bingchunmoli.Test;
 
 
+import com.bingchunmoli.Dao.UserAddachieve;
+import com.bingchunmoli.Obj.User;
+
 /**
  * @ProjectName: []
  * @Package: [.]
@@ -14,6 +17,12 @@ package com.bingchunmoli.Test;
  */
 public class JavaTest {
     public static void main(String[] args) {
-        System.out.println("");
+        UserAddachieve user = new UserAddachieve();
+        User user1 = new User();
+        user1.setUID(23);
+        user1.setEmil("@3");
+        user1.setName("sd");
+        user.query(2,user1);
+        System.out.println("执行完毕");
     }
 }
