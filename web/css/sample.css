@@ -1,7 +1,7 @@
-* {
+/* * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; } */
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
@@ -31,13 +31,13 @@ pre {
   display: inline-block; }
 
 .zip {
-  background: url("../images/zip.png");
+  background: url("/images/zip.png");
   display: block;
   width: 128px;
   height: 128px; }
 
 .tar {
-  background: url("../images/tar.png");
+  background: url("/images/tar.png");
   display: block;
   width: 128px;
   height: 128px; }

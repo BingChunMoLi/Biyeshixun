@@ -7,9 +7,724 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320c7974-fd76-4f60-a208-60f90afc121d" name="Default Changelist" comment="反射查询">
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/If.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.62.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/junit-jupiter-api-5.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/basic_layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/common_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/jquery.fancybox-1.3.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/115566.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/btn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/btn_hover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/page_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/artDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/commonAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.4.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.7.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.fancybox-1.3.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.fancybox-1.3.4.pack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAddachieve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAddachieve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/META-INF/毕业设计.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Additions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAddachieve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/NewUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/Userimage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/guanggao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/pinglun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/tiezi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/JavaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Test/Test_Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Util/SHA1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Util/login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/NOTICE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/RELEASE-NOTES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/BinaryDecoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/BinaryEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/CharEncoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/Charsets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/Decoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/DecoderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/Encoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/EncoderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/Resources.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/StringDecoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/StringEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/StringEncoderComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Base32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Base32InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Base32OutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Base64.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Base64InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Base64OutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/BaseNCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/BaseNCodecInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/BaseNCodecOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/BinaryCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/CharSequenceUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/Hex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/StringUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Base32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Base32InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Base32OutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Base64.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Base64InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Base64OutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/BaseNCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/BaseNCodecInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/BaseNCodecOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/BinaryCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/CharSequenceUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/Hex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/class-use/StringUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/binary/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/BinaryDecoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/BinaryEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/CharEncoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/Charsets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/Decoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/DecoderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/Encoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/EncoderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/Resources.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/StringDecoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/StringEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/class-use/StringEncoderComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/cli/Digest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/cli/class-use/Digest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/cli/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/cli/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/cli/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/cli/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/DigestUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/HmacAlgorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/HmacUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/Md5Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/MessageDigestAlgorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/MurmurHash2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/MurmurHash3.IncrementalHash32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/MurmurHash3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/PureJavaCrc32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/PureJavaCrc32C.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/Sha2Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/UnixCrypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/XXHash32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/DigestUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/HmacAlgorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/HmacUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/Md5Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/MessageDigestAlgorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/MurmurHash2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/MurmurHash3.IncrementalHash32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/MurmurHash3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/PureJavaCrc32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/PureJavaCrc32C.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/Sha2Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/UnixCrypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/class-use/XXHash32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/digest/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/AbstractCaverphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/Caverphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/Caverphone1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/Caverphone2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/ColognePhonetic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/DaitchMokotoffSoundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/DoubleMetaphone.DoubleMetaphoneResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/DoubleMetaphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/MatchRatingApproachEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/Metaphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/Nysiis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/RefinedSoundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/Soundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/BeiderMorseEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Lang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Languages.LanguageSet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Languages.SomeLanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/NameType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/PhoneticEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Rule.Phoneme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Rule.PhonemeExpr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Rule.PhonemeList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Rule.RPattern.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/Rule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/RuleType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/BeiderMorseEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Lang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Languages.LanguageSet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Languages.SomeLanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/NameType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/PhoneticEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Rule.Phoneme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Rule.PhonemeExpr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Rule.PhonemeList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Rule.RPattern.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/Rule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/class-use/RuleType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/bm/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/AbstractCaverphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/Caverphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/Caverphone1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/Caverphone2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/ColognePhonetic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/DaitchMokotoffSoundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/DoubleMetaphone.DoubleMetaphoneResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/DoubleMetaphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/MatchRatingApproachEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/Metaphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/Nysiis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/RefinedSoundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/class-use/Soundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/language/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/BCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/PercentCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/QCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/QuotedPrintableCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/URLCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/class-use/BCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/class-use/PercentCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/class-use/QCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/class-use/QuotedPrintableCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/class-use/URLCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/net/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/org/apache/commons/codec/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/BinaryDecoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/BinaryEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/CharEncoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/Charsets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/Decoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/DecoderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/Encoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/EncoderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/Resources.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/StringDecoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/StringEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/StringEncoderComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Base32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Base32InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Base32OutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Base64.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Base64InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Base64OutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/BaseNCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/BaseNCodecInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/BaseNCodecOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/BinaryCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/CharSequenceUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/Hex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/binary/StringUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/cli/Digest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/DigestUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/HmacAlgorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/HmacUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/Md5Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/MessageDigestAlgorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/MurmurHash2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/MurmurHash3.IncrementalHash32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/MurmurHash3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/PureJavaCrc32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/PureJavaCrc32C.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/Sha2Crypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/UnixCrypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/digest/XXHash32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/AbstractCaverphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/Caverphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/Caverphone1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/Caverphone2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/ColognePhonetic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/DaitchMokotoffSoundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/DoubleMetaphone.DoubleMetaphoneResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/DoubleMetaphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/MatchRatingApproachEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/Metaphone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/Nysiis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/RefinedSoundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/Soundex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/BeiderMorseEncoder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Lang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Languages.LanguageSet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Languages.SomeLanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/NameType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/PhoneticEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Rule.Phoneme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Rule.PhonemeExpr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Rule.PhonemeList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Rule.RPattern.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/Rule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/language/bm/RuleType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/net/BCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/net/PercentCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/net/QCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/net/QuotedPrintableCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/src-html/org/apache/commons/codec/net/URLCodec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/apidocs/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/commons-codec-1.13-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/commons-codec-1.13-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/commons-codec-1.13-test-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/commons-codec-1.13-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/commons-codec-1.13/commons-codec-1.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.48-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.48.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/auth/x64/sqljdbc_auth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/auth/x86/sqljdbc_auth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/install.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre11-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre12-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre8-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/mssql-jdbc-7.4.1.jre8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/release.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/adaptive/ExecuteStoredProcedures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/adaptive/readLargeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/adaptive/updateLargeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/alwaysencrypted/AlwaysEncrypted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/azureactivedirectoryauthentication/AzureActiveDirectoryAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/connections/ConnectDataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/connections/ConnectURL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/constrained/ConstrainedDelegation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/dataclassification/DataDiscoveryAndClassification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/datatypes/BasicDataTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/datatypes/SpatialDataTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/datatypes/SqlXmlDataType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/resultsets/CacheResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/resultsets/RetrieveResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/resultsets/UpdateResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/samples/sparse/SparseColumns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/thirdpartynotices.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/xa/x64/sqljdbc_xa.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/xa/x86/sqljdbc_xa.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/sqlservetjdbcdrive/sqljdbc_7.4/chs/xa/xa_install.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/blue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/blue-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/devine-art.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/flickr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/linked-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/stumble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/blue-skin5152.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/bootstrap-responsive.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/bootstrap5152.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/colorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/custom5152.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/devine-art.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/faq-minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/faq-plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/flickr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/green-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/linked-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/plus-minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/stumble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/green-skin5152.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/jquery.gridly.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/jquery.gritter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/main5152.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/maruti-login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/maruti-media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/maruti-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/devine-art.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/faq-minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/faq-plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/flickr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/linked-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/plus-minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/red-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/stumble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/red-skin5152.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/responsive5152.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/css/uniform.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/green.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/Descr.WD3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/backgrounds/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/breadcrumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/calendar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/category-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/category-main-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/comment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/css-border-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/av1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/av2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/av3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/av4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/av5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/demo-image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/demo-image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/demo-image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/demo/envelope.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/devine-art.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/faq-minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/faq-plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/flickr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/gallery/imgbox1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/gallery/imgbox2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/gallery/imgbox3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/gallery/imgbox4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/gallery/imgbox5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/gritter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/cabinet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/client.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/graph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/mail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/people.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/piechart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/shopping-bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/survey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/tag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/wallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/16/web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/cabinet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/client.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/dashboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/graph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/mail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/people.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/piechart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/shopping-bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/survey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/tag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/wallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/icons/32/web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/image-large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/larrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/li-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/like-btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/linked-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/login-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/main-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/menu-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/plus-minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/question-large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/quote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/rarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/scroll-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/search-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/standard-large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/standard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/stumble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/support.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/temp/Descr.WD3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/temp/living-room-770x501.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/temp/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/tx.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/video-large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/images/video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/bootstrap-colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/custom5152.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jflickrfeed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.easing.1.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.easing.1.34e44.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.flot.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.flot.pie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.flot.resize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.formd471.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.gridly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.gritter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.liveSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.liveSearchd5f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.peity.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.ui.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.uniform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.validate.minfc6b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/jquery.wizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.chat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.form_common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.form_validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.tables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/maruti.wizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/prettyphoto/jquery.prettyPhoto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/prettyphoto/jquery.prettyPhotoaeb9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/prettyphoto/prettyPhotoaeb9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/rainbow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/js/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Administrators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Charitable donations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Commentary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Full screen width.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Message Board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Modify information.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Others view information page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/Reply page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/articles-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/chat/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/house_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/asd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/timg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/u=2101170278,3224539562&amp;fm=26&amp;gp=0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/wu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (10).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (11).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (12).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (13).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (14).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (15).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (16).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (17).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (18).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (19).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (20).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (21).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (22).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (24).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (25).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (26).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (27).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (28).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (29).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (30).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (31).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (32).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (33).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (34).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (35).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (36).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (37).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (38).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (39).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (40).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (41).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (42).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (43).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (5).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/images/环境污染素材 (9).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/js/yanzhengma.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/personal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/asd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/u=2101170278,3224539562&amp;fm=26&amp;gp=0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/wu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (10).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (11).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (12).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (13).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (14).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (15).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (16).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (17).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (18).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (19).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (20).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (21).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (22).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (24).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (25).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (26).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (27).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (28).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (29).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (30).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (31).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (32).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (33).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (34).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (35).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (36).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (37).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (38).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (39).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (40).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (41).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (42).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (43).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (5).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/images/环境污染素材 (9).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/js/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/signup/zhuce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/page/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/red.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/网页定义.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/META-INF/毕业设计.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Additions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAddachieve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/Userimage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/guanggao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/pinglun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/tiezi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/JavaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Test/Test_Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Util/SHA1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Util/login.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAdditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAdditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/blue.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/blue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/main5152.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main5152.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/sample.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/green.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/green.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Administrators.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Administrators.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Charitable donations.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Charitable donations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Commentary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Full screen width.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Full screen width.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Message Board.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Message Board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Modify information.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Modify information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Others view information page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Others view information page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/Reply page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Reply page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/articles-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/articles-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/house_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/house_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/signup/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/signup/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/zhuce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/red.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/red.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/网页定义.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/网页定义.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +785,16 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1VrgK9YzMv9knv8ufa4cqTg37eJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -98,7 +817,7 @@
       <recent name="D:\Github\Biyesheji\src\com\bingchunmoli\Util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bingchunmoli.Test.JavaTest" />
       <module name="毕业设计" />
@@ -197,12 +916,8 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Test@blog.bingchunmoli.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Test@blog.bingchunmoli.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4996b42f" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -245,7 +960,13 @@
       <workItem from="1578383475653" duration="255000" />
       <workItem from="1578405572877" duration="511000" />
       <workItem from="1578408894010" duration="181000" />
-      <workItem from="1578445696671" duration="8211000" />
+      <workItem from="1578445696671" duration="8578000" />
+      <workItem from="1578459838543" duration="4581000" />
+      <workItem from="1578464934130" duration="419000" />
+      <workItem from="1578465430019" duration="106000" />
+      <workItem from="1578465666807" duration="2740000" />
+      <workItem from="1578469473315" duration="5975000" />
+      <workItem from="1578475931254" duration="275000" />
     </task>
     <task id="LOCAL-00001" summary="Link Mysql OK">
       <created>1578283739779</created>
@@ -304,6 +1025,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Link Mysql OK" />
     <MESSAGE value="反射查询" />
     <option name="LAST_COMMIT_MESSAGE" value="反射查询" />
@@ -352,82 +1074,82 @@
     </state>
     <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294405094" />
     <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1578279027934" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1578453462338">
+    <state width="1431" height="267" key="GridCell.Tab.0.bottom" timestamp="1578475469385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1578453462338">
+    <state width="1431" height="267" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578475469385" />
+    <state width="1431" height="267" key="GridCell.Tab.0.center" timestamp="1578475469385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990455" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1578453462338">
+    <state width="1431" height="267" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578475469385" />
+    <state width="1431" height="267" key="GridCell.Tab.0.left" timestamp="1578475469385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990450" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1578453462338">
+    <state width="1431" height="267" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578475469385" />
+    <state width="1431" height="267" key="GridCell.Tab.0.right" timestamp="1578475469385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990460" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578453462338" />
-    <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1578451330695">
+    <state width="1431" height="267" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578475469385" />
+    <state width="1431" height="267" key="GridCell.Tab.1.bottom" timestamp="1578475469386">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="1431" height="277" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
-    <state width="1431" height="277" key="GridCell.Tab.1.center" timestamp="1578451330695">
+    <state width="1431" height="267" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578475469386" />
+    <state width="1431" height="267" key="GridCell.Tab.1.center" timestamp="1578475469385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="1431" height="277" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
-    <state width="1431" height="277" key="GridCell.Tab.1.left" timestamp="1578451330695">
+    <state width="1431" height="267" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1578475469385" />
+    <state width="1431" height="267" key="GridCell.Tab.1.left" timestamp="1578475469385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="1431" height="277" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
-    <state width="1431" height="277" key="GridCell.Tab.1.right" timestamp="1578451330695">
+    <state width="1431" height="267" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1578475469385" />
+    <state width="1431" height="267" key="GridCell.Tab.1.right" timestamp="1578475469386">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="1431" height="277" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1578451330695" />
-    <state width="981" height="224" key="GridCell.Tab.2.bottom" timestamp="1578303990464">
+    <state width="1431" height="267" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1578475469386" />
+    <state width="981" height="223" key="GridCell.Tab.2.bottom" timestamp="1578475469372">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990464" />
-    <state width="981" height="224" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
-    <state width="981" height="224" key="GridCell.Tab.2.center" timestamp="1578303990462">
+    <state width="981" height="223" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578475469372" />
+    <state width="981" height="223" key="GridCell.Tab.2.center" timestamp="1578475469372">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="981" height="224" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
-    <state width="981" height="224" key="GridCell.Tab.2.left" timestamp="1578303990462">
+    <state width="981" height="223" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1578475469372" />
+    <state width="981" height="223" key="GridCell.Tab.2.left" timestamp="1578475469372">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="981" height="224" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
-    <state width="981" height="224" key="GridCell.Tab.2.right" timestamp="1578303990463">
+    <state width="981" height="223" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1578475469372" />
+    <state width="981" height="223" key="GridCell.Tab.2.right" timestamp="1578475469372">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990463" />
-    <state width="981" height="224" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
-    <state width="981" height="224" key="GridCell.Tab.3.bottom" timestamp="1578283964434">
+    <state width="981" height="223" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1578475469372" />
+    <state width="981" height="223" key="GridCell.Tab.3.bottom" timestamp="1578475469373">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578283964434" />
-    <state width="981" height="224" key="GridCell.Tab.3.center" timestamp="1578283964430">
+    <state width="981" height="223" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578475469373" />
+    <state width="981" height="223" key="GridCell.Tab.3.center" timestamp="1578475469373">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
-    <state width="981" height="224" key="GridCell.Tab.3.left" timestamp="1578283964430">
+    <state width="981" height="223" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1578475469373" />
+    <state width="981" height="223" key="GridCell.Tab.3.left" timestamp="1578475469373">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1578283964430" />
-    <state width="981" height="224" key="GridCell.Tab.3.right" timestamp="1578283964434">
+    <state width="981" height="223" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1578475469373" />
+    <state width="981" height="223" key="GridCell.Tab.3.right" timestamp="1578475469373">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="224" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1578283964434" />
+    <state width="981" height="223" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1578475469373" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1578020826779">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -441,15 +1163,15 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1578022093184" />
-    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578447395669">
+    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578474205754">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone/62.0.1474.864@62.0.1474.864" timestamp="1578447395669" />
-    <state x="480" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1578445695841">
+    <state x="554" y="186" key="com.intellij.database.run.ParametersPanel.Standalone/62.0.1474.864@62.0.1474.864" timestamp="1578474205754" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1578476058797">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303480038" />
-    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1578445695841" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1578476058797" />
     <state x="-1595" y="129" width="1011" height="571" key="dock-window-1" timestamp="1578292758909">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -460,9 +1182,109 @@
     </state>
     <state x="-1871" y="-6" width="1213" height="735" maximized="true" key="dock-window-2/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294570465" />
     <state x="-1637" y="0" width="1011" height="735" maximized="true" key="dock-window-2/62.0.1474.864@62.0.1474.864" timestamp="1578292758909" />
+    <state x="456" y="197" key="run.anything.popup" timestamp="1578473813668">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="456" y="197" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1578473813668" />
     <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1578448630575">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1578448630575" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/SHA1.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/SHA1.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

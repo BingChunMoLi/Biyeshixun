@@ -25,14 +25,12 @@
               <div class="container">
 
 
-                      < <div class="logo-container">
-                              <!-- Website Logo -->
-                              <a href="/index.html"  title="公益之家">
-                                      <img src="/images/logo.png" alt="公益之家">
-                              </a>
-                              <!-- <span class="tag-line">Premium WordPress Theme</span> -->
-                      </div>
-
+                <div class="logo-container">
+                        <!-- Website Logo -->
+                        <h4 title="公益之家"  onclick="window.location.href='../index.html'" style="color: rgb(255, 255, 255)" >公益之家</h4>
+                                
+                        <!-- <span class="tag-line">Premium WordPress Theme</span> -->
+                </div>
 
                        <!-- Start of Main Navigation -->
                        <nav class="main-nav">
@@ -40,7 +38,7 @@
                                       <ul id="menu-top-menu" class="clearfix">
                                               <li><a href="/page/login/login.html">登录</a></li>
                                               <li><a href="/page/signup/zhuce.html">注册</a></li>
-                                              <li><a href="/page/Others view information page.html">个人中心</a></li>
+                                              <li><a href="/page/personal.html">个人中心</a></li>
                                               <!-- <li><a href="articles-list.html">修改密码</a></li>
                                               <li><a href="faq.html">2</a></li> -->
                                               <li><a href="#">主题</a>
@@ -72,7 +70,7 @@
 <!-- Start of Search Wrapper -->
 <div class="search-area-wrapper">
       <div class="search-area container">
-              <h3 class="search-header">有一个问题？</h3>
+              <h3 class="search-header" onclick="window.location.href='../index.html'" >有一个问题？</h3>
               <p class="search-tag-line">如果您有任何疑问，可以在下面询问或输入您要查找的内容！</p>
 
               <form id="search-form" class="search-form clearfix" method="get" action="#" autocomplete="off">
@@ -93,72 +91,81 @@
 
                               <article class="type-page hentry clearfix">
                                       <h1 class="post-title">
-                                              <a href="#">个人信息</a>
+                                              <a href="Modify information.html">个人信息</a>
                                       </h1>
                                       <hr>        
                               </article>
 
 
-                              <form id="contact-form" class="row" action="http://inspirythemes.com/templates/knowledgebase-html/contact_form_handler.php" method="post">
+                              
+<div id="contact-form" class="row"  method="post">
 
-                                      <div class="span2">
-                                              <label for="name">昵称<span>*</span> </label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>鼓楼谢广坤</p>
-                                      </div>
-                                      <div class="span2">
-                                              <label for="email">邮箱<span>*</span></label>
-                                      </div>
-                                      <div class="youxiang">
-                                              <p>5521@qq.com</p>
-                                      </div>
+                                                        <div class="span2">
+                                                                <label>用户名<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="name">鼓楼谢广坤</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>邮箱<span>*</span></label>
+                                                        </div>
+                                                        <div class="youxiang">
+                                                                <p id="email">5521@qq.com</p>
+                                                        </div>
 
-                                      <div class="span2">
-                                              <label for="reason">性别</label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>女</p>
-                                      </div>
+                                                        <div class="span2">
+                                                                <label>性别</label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="sex">女</p>
+                                                        </div>
 
-                                      <div class="span2">
-                                              <label for="message">年龄<span>*</span> </label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>21</p>
-                                      </div>
-                                      <div class="span2">
-                                              <label for="message">积分<span>*</span> </label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>188分</p>
-                                      </div>
-                                      <div class="span2">
-                                              <label for="message">上次登录<span>*</span> </label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>2020年1月1日</p>
-                                      </div>
-                                      <div class="span2">
-                                              <label for="message">手机号码<span>*</span> </label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>1125647821</p>
-                                      </div><div class="span2">
-                                              <label for="message">兴趣爱好<span>*</span> </label>
-                                      </div>
-                                      <div class="gerenxinxi">
-                                              <p>看电视，玩游戏</p>
-                                      </div>
-                                      <div class="span6 offset2 bm30">
-                                              <input type="submit" name="submit" value="修改信息" class="btn btn-inverse">
-                                              <img src="/images/loading.gif" id="contact-loader" alt="Loading...">
-                                      </div>
+                                                        <div class="span2">
+                                                                <label>年龄<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="age">21</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>积分<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p  id="integral">188分</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>上次登录于<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="lastdata">2020年1月1日</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>您注册于<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="signupdata">2020年1月1日</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>您上次登录ip<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="lastip">2020年1月1日</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>您上次登录地址<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="lastsite">2020年1月1日</p>
+                                                        </div>
+                                                        <div class="span2">
+                                                                <label>您的等级为<span>*</span> </label>
+                                                        </div>
+                                                        <div class="gerenxinxi">
+                                                                <p id="urank">2020年1月1日</p>
+                                                        </div>
+                                                        <div class="span6 offset2 error-container"></div>
+                                                        <div class="span8 offset2" id="message-sent"></div>
 
-                                      <div class="span6 offset2 error-container"></div>
-                                      <div class="span8 offset2" id="message-sent"></div>
-
-                              </form>
+                                                </div>
                       </div>
                       <!-- end of page content -->
                       <div class="dd">
@@ -244,30 +251,31 @@
       </section>
     </div>
     <!-- Footer Bottom -->
+    <!-- 网页底部连接 -->
     <div id="footer-bottom-wrapper">
-      <div id="footer-bottom" class="container">
-              <div class="row">
-                      <div class="span6">
-                              <p class="copyright">
-                                      sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf <a href="http://www.cssmoban.com/" title="xx" target="_blank">xx</a>
-                              </p>
-                      </div>
-                      <div class="span6">
-                              <!-- Social Navigation -->
-                              <ul class="social-nav clearfix">
-                                      <li class="linkedin"><a target="_blank" href="#"></a></li>
-                                      <li class="stumble"><a target="_blank" href="#"></a></li>
-                                      <li class="google"><a target="_blank" href="#"></a></li>
-                                      <li class="deviantart"><a target="_blank" href="#"></a></li>
-                                      <li class="flickr"><a target="_blank" href="#"></a></li>
-                                      <li class="skype"><a target="_blank" href="skype:#?call"></a></li>
-                                      <li class="rss"><a target="_blank" href="#"></a></li>
-                                      <li class="twitter"><a target="_blank" href="#"></a></li>
-                                      <li class="facebook"><a target="_blank" href="#"></a></li>
-                              </ul>
-                      </div>
-              </div>
-      </div>
+        <div id="footer-bottom" class="container">
+                <div class="row">
+                        <div class="span6">
+                                <p class="copyright">
+                                        版权所有@冰彦糖<a href="http://beian.miit.gov.cn/" title="网页模板" target="_blank">|豫ICP备18045222号</a>
+                                </p>
+                        </div>
+                        <div class="span6">
+                                
+                                <ul class="social-nav clearfix">
+                                        <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/"></a></li>
+                                        <li class="stumble"><a target="_blank" href="https://www.Twitter.com/"></a></li>
+                                        <li class="google"><a target="_blank" href="http://beian.miit.gov.cn/"></a></li>
+                                        <li class="deviantart"><a target="_blank" href=" http://www.deviantart.com/"></a></li>
+                                        <li class="flickr"><a target="_blank" href="http://www.flickr.com/"></a></li>
+                                        <li class="skype"><a target="_blank" href=" http://www.skype.com/"></a></li>
+                                        <li class="rss"><a target="_blank" href="https://www.rss.com/"></a></li>
+                                        <li class="twitter"><a target="_blank" href="https://www.twitter.com/"></a></li>
+                                        <li class="facebook"><a target="_blank" href="www.facebook.com"></a></li>
+                                </ul>
+                        </div>
+                </div>
+        </div>
 </div>
 <!-- End of Footer Bottom -->
 <!-- End of Footer -->

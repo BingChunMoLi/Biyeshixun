@@ -20,7 +20,7 @@ import java.sql.SQLException;
  * @UpdateRemark: [说明本次修改内容]
  */
 public class UserAdditions {
-    public boolean Search_user(String Input_user) {
+    public static boolean Search_user(String Input_user) {
         boolean flag = false;                               //boolean 判断是否为空返回值用
         Integer UID = null;
         User user = new User();                             //new一个用户对象

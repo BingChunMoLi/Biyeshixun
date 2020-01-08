@@ -98,4 +98,23 @@ public class UserAddachieve<T> implements Additions<T> {
             e.printStackTrace();
         }
     }
+    public void userquery(T... t){
+        String passwordex;
+        sql = "SELECT * from " + String.valueOf(t[0]) +" where name = ?";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, String.valueOf(t[1]));
+            ResultSet rs = preparedStatement.executeQuery();
+//            while(rs.next()){
+                passwordex = rs.getString("password");
+//            }
+            if (passwordex.equals(t[2])){
+                System.out.println("true");
+            }else{
+                System.out.println("else");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

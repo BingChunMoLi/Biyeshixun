@@ -1,15 +1,14 @@
-login.html 			ç™»é™†
-zhuce.html 			æ³¨å†Œ
-Administrators.html		èŠå¤©ç•Œé¢
-tables.html			ç®¡ç†å‘˜æ•°æ®è¡¨
-Message Board.html		ç•™è¨€æ¿
-FAQS/FAQ.html			å¸¸è§é—®é¢˜
-Modify information.html		ä¿®æ”¹ä¸ªäººä¿¡æ¯
-articles-list.html		æœç´¢æŸ¥æ‰¾
-Commentary.html			æ–‡ç«  è¯„è®º
-Full screen width.html		å¸¸è§é—®é¢˜
-Others view information page.html å¯¹åˆ«äººä¿¡æ¯æŸ¥çœ‹
-personal.html			ä¸ªäººä¿¡æ¯
-Reply page.html 		å›å¤ç•Œé¢
-
-Charitabledonations		æ…ˆå–„å‹Ÿæ
+login.html 			µÇÂ½
+zhuce.html 			×¢²á
+Message Board.html		ÁôÑÔ°å
+FAQS/FAQ.html			³£¼ûÎÊÌâ
+Modify information.html		ĞŞ¸Ä¸öÈËĞÅÏ¢
+articles-list.html		ËÑË÷²éÕÒ
+Commentary.html			ÎÄÕÂ ÆÀÂÛ
+Full screen width.html		³£¼ûÎÊÌâ
+Others view information page.html ¶Ô±ğÈËĞÅÏ¢²é¿´
+personal.html			¸öÈËĞÅÏ¢
+Reply page.html 		»Ø¸´½çÃæ
+Charitabledonations		´ÈÉÆÄ¼¾è
+house_edit.html                 ¹ÜÀíÔ±ĞŞ¸ÄĞÅÏ¢Ò³Ãæ
+Administrators.html		¹ÜÀíÔ±Ò³Ãæ
