@@ -52,7 +52,7 @@
                                          <nav class="main-nav">
                                                 <div class="menu-top-menu-container">
                                                         <ul id="menu-top-menu" class="clearfix">
-                                                                <li><a href="/page/login/login.html">登录</a></li>
+                                                                <li><a href="/page/login/login.html" id="btn" onMouseOver="javascript:showInform();"  onMouseOut="hiddenInform()"><img src="images/support.png" style="width:30px; height:30px; border-radius:100%; overflow:hidden;"/>登录</a></li>
                                                                 <li><a href="/page/signup/zhuce.html">注册</a></li>
                                                                 <li><a href="/page/personal.html">个人中心</a></li>
                                                                 <!-- <li><a href="articles-list.html">修改密码</a></li> -->
@@ -226,7 +226,7 @@
                                                                 <li class="deviantart"><a target="_blank" href=" http://www.deviantart.com/"></a></li>
                                                                 <li class="flickr"><a target="_blank" href="http://www.flickr.com/"></a></li>
                                                                 <li class="skype"><a target="_blank" href=" http://www.skype.com/"></a></li>
-                                                                <li class="rss"><a target="_blank" href="https://www.rss.com/"></a></li>
+                                                                <li class="rss"><a target="_blank" href="https://sakura.bingchunmoli.com/feed/"></a></li>
                                                                 <li class="twitter"><a target="_blank" href="https://www.twitter.com/"></a></li>
                                                                 <li class="facebook"><a target="_blank" href="www.facebook.com"></a></li>
                                                         </ul>
@@ -250,6 +250,27 @@
                 <script type='text/javascript' src='/js/jquery.form.js'></script>
                 <script type='text/javascript' src='/js/jquery.validate.min.js'></script>
                 <script type='text/javascript' src='/js/custom.js'></script>
+                <script type="text/javascript">
+                        //显示悬浮层
+                        function showInform() {
+                            document.getElementById("inform").style.display = 'block';
+                            // document.getElementById("inform").css("display","block");
+                        }
+                    
+                        //隐藏悬浮层
+                        function hiddenInform(event) {
+                            var informDiv = document.getElementById('inform');
+                            var x = event.clientX;
+                            var y = event.clientY;
+                            var divx1 = informDiv.offsetLeft;
+                            var divy1 = informDiv.offsetTop;
+                            var divx2 = informDiv.offsetLeft + informDiv.offsetWidth;
+                            var divy2 = informDiv.offsetTop + informDiv.offsetHeight;
+                            if (x < divx1 || x > divx2 || y < divy1 || y > divy2) {
+                                document.getElementById('inform').style.display = 'none';
+                            }
+                        }
+                    </script>
 
         </body>
 </html>

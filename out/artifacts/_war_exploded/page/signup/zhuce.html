@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-08 14:26:20
+ * @LastEditTime: 2020-01-09 10:49:12
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \web\page\signup\zhuce.html
+ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,10 +32,10 @@
 						<input type="email" class="text" id="email" name="email" placeholder="输入邮箱啊╭(╯3╰)╮">
 					<!--注册-->
 					<div class="zhuce">
-						<input type="submit" id="GetName" name="GetName" value="注册账户" >
+						<input type="button" class="xoo" id="GetName" name="GetName" value="注册账户" >
 					</div>
 					<div class="submit" >
-						<input type="button" id="denglu"  name="denglu" value="去登陆" onclick="window.location.href='../login/login.html';">
+						<input type="button" class="xoo" id="denglu"  name="denglu" value="去登陆" onclick="window.location.href='../login/login.html';">
 					</div>
 				</div>
 			</div>
@@ -62,13 +70,16 @@
 					 alert('两次密码不正确');
 				 }else{
 					 $.ajax({
-						 url: "/DataInsertController",    //请求的url地址
-						 data: {"name": name,"email":email,"password": pass1,"signupdata": signupdata,"table":user},    //参数值
+						 url: "/signup",    //请求的url地址
+						 data: {"name": name,"email":email,"password": pass1},    //参数值
 						 type: "POST",
-						 dataType: "json",   //返回格式为json
-						 // success: function (data) {
+						 async:true,
+						 dataType: "text",   //返回格式为json
+						 success: function () {
 						     	//请求成功时处理
-						 // }
+							 // console.log(data);
+							 window.location.href="/";
+						 }
 					 });
 				 }
 

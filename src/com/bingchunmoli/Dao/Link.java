@@ -19,7 +19,7 @@ public class Link {
     /**
      * 
      */
-    public static final String URL = "jdbc:mysql://blog.bingchunmoli.com:3306/Test?useSSL=true&serverTimezone=UTC";
+    public static final String URL = "jdbc:mysql://blog.bingchunmoli.com:3306/Test?useSSL=false&serverTimezone=UTC";
 
     /**
      * 

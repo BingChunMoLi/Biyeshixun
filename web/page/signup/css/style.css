@@ -121,7 +121,7 @@ text-align: center;
 form p a:hover {
 	color:#21A957;
 }
- input[type="text"], input[type="password"]{
+ input[type="text"], input[type="password"], input[type="email"]{
 	text-align:left;
 	position: relative;
 	width:92%;
@@ -138,7 +138,7 @@ form p a:hover {
 	border:1px solid #DED6D6;
 	-webkit-appearance:none;
 }
- input[type="text"]:hover, input[type="password"]:hover{
+ input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover{
  	border:1px solid #949494;
 	transition:0.5s;
 	-webkit-transition:0.5s;
@@ -275,7 +275,7 @@ form p a:hover {
 		left: 34%;
 	}
 
-	input[type="text"], input[type="password"], .xoo {
+	input[type="text"], input[type="password"],input[type="email"],s .xoo {
 		font-weight: 600;
 		margin-bottom: 4%;
 	}
@@ -298,7 +298,7 @@ form p a:hover {
 			left: 36%;
 		}
 
-		input[type="text"], input[type="password"], .xoo {
+		input[type="text"], input[type="password"],input[type="email"], .xoo {
 			font-weight: 600;
 			font-size: 15px;
 		}

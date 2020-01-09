@@ -7,5 +7,17 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://blog.bingchunmoli.com:3306/Test?useSSL=true&amp;serverTimezone=UTC</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="@192.168.43.30" uuid="c852d849-d163-4c13-98d4-96403b9b8b4d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.43.30:3306?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@192.168.43.42" uuid="aa4b6d46-918d-4257-849f-058d1d405dec">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.43.42:3306?serverTimezone=UTC</jdbc-url>
+    </data-source>
   </component>
 </project>
