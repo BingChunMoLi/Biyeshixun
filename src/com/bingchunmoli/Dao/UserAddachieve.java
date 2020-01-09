@@ -51,11 +51,15 @@ public class UserAddachieve<T> implements Additions<T> {
         sql = "INSERT into " + String.valueOf(t[0])+ " ( " + temp +" )values(" + temp2 + ")";
         try {
             preparedStatement = connection.prepareStatement(sql);
-            for (int i = 1;i < zd;i++){
-                preparedStatement.setString(i, String.valueOf(t[i]));
-            }
             if (String.valueOf(t[0]).equals("User")){
+                for (int i = 1;i < zd;i++){
+                    preparedStatement.setString(i, String.valueOf(t[i + zd + 1]));
+                }
                 preparedStatement.setLong(zd,new Date().getTime());
+            }else{
+                for (int i = 1;i < zd;i++){
+                    preparedStatement.setString(i, String.valueOf(t[i]));
+                }
             }
             preparedStatement.execute();
         } catch (SQLException e) {
@@ -68,11 +72,26 @@ public class UserAddachieve<T> implements Additions<T> {
      */
     @Override
     public void update(T... t) {
-        sql = "update User set name = ?,password = ?,email = ? where UID = 2";
+        int zd = (Integer) t[1];
+//        String array[] = new String[zd];
+//        String temp = "";
+//        for (int i = 2;i < zd + 2;i++){
+//            if (i == zd + 1){
+//                temp += t[i] + "=?";
+//            }else{
+//                temp += t[i] + "=?,";
+//            }
+//        }
+//        System.out.println(temp);
+//        update User set name=?,email=?,password=?,age=?,sex=? where uid = 163;
+
         try {
+            sql = "update " + String.valueOf(t[0]) +" set " + String.valueOf(t[2]) + "where " + String.valueOf(t[t.length - 2]) +" =" + (Integer)t[t.length - 1];
             preparedStatement = connection.prepareStatement(sql);
-            for (int i = 0;i < t.length;i++){
-                preparedStatement.setString(i + 1, String.valueOf(t[i]));
+            for (int i = 1;i < zd +1;i++){
+                System.out.println(i);
+                System.out.println("i+zd:" + i+zd);
+                preparedStatement.setString(i, String.valueOf(t[i + zd]));
             }
             preparedStatement.execute();
         } catch (SQLException e) {
@@ -154,5 +173,21 @@ public class UserAddachieve<T> implements Additions<T> {
             e.printStackTrace();
         }
         return flag;
+    }
+    public int useruid(T... t){
+        User user = new User();
+        int UID = 0;
+        sql = "SELECT * from " + String.valueOf(t[0]) +" where name = ?";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, String.valueOf(t[1]));
+            ResultSet rs = preparedStatement.executeQuery();
+            while(rs.next()){
+                UID = rs.getInt("uid");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return UID;
     }
 }

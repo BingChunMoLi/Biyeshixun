@@ -2,14 +2,11 @@ package com.bingchunmoli.Util;
 
 import com.bingchunmoli.Dao.UserAddachieve;
 import com.bingchunmoli.Dao.UserAdditions;
-import com.bingchunmoli.Obj.User;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -27,16 +24,24 @@ public class login extends HttpServlet {
         pwd_rex = If.check("[a-zA-Z]+([0-9a-zA-Z]){5,11}",password);
         user_null = UserAdditions.Search_user(username);
         if (user_rex && pwd_rex){
-            if (!user_null){
+            if (user_null){
                 HttpSession session =  request.getSession();
                 if (session.getAttribute(username) == null){
                     UserAddachieve user = new UserAddachieve();
                     password = SHA1.getSha1(password);
-                    user.userquery("User",username,password);
+                    boolean a = user.userquery("User",username,password);
+                    if(a){
+                        int uid = user.useruid("User",username);
+                        session.setAttribute("User",uid);
+                        Cookie cookie = new Cookie("User",String.valueOf(uid));
+                        cookie.setMaxAge(60 * 60 * 24);
+                        response.addCookie(cookie);
+                    }else{
+                        out.print("登录失败，密码错误");
+                    }
                 }else{
                     response.sendRedirect("/page/login/login.html");
                 }
-//                System.out.println(session.getId());
             }else{
                 out.print("没有此用户");
             }

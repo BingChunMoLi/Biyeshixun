@@ -21,14 +21,14 @@ import java.sql.Connection;
  */
 public class JavaTest {
     public static void main(String[] args) {
-        UserAddachieve user = new UserAddachieve();
-        User user1 = new User();
-        user1.setUID(23);
-        user1.setEmil("@3");
-        user1.setName("sd");
-        user.add("user","7","23");
-        System.out.println("执行完毕");
-//        String a = SHA1.encodePassword("password");
-//        System.out.println(a);
+//        UserAddachieve user = new UserAddachieve();
+//        User user1 = new User();
+//        user1.setUID(23);
+//        user1.setEmil("@3");
+//        user1.setName("sd");
+//        user.add("user","7","23");
+//        System.out.println("执行完毕");
+        String a = SHA1.encodePassword("password");
+        System.out.println(a);
     }
 }
