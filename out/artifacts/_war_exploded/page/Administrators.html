@@ -14,6 +14,11 @@
                                            <!-- 管理员页面 -->
 
     <!-- Style Sheet-->
+	  <!-- 实现拖动效果，需引入 JQuery UI -->
+	  <script src="assets/jquery-ui.min.js?v=1.12.1"></script>
+	  <link rel="stylesheet" type="text/css" href="/css/waifu.css"/>
+	  <script src="/js/autoload.js"></script>
+	  <script src="/js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css"/>
     <link rel='stylesheet' id='bootstrap-css-css'  href='/css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='responsive-css-css'  href='/css/responsive5152.css?ver=1.0' type='text/css' media='all' />
@@ -38,7 +43,7 @@
 
             <div class="logo-container">
 				<!-- Website Logo -->
-				<h4 title="公益之家" onclick="window.location.href='../index.html'"  style="color: rgb(255, 255, 255)" >公益之家</h4>
+				<h4 title="公益之家" onclick="window.location.href='../index.html'"  style="color: rgb(255, 255, 255);width: 144px; height: 40px;" ><img src="../images/qqq.png"/></h4>
 						
 				<!-- <span class="tag-line">Premium WordPress Theme</span> -->
 		</div>
@@ -87,20 +92,20 @@
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
 	        'onClosed' : function() { 
-	        	window.location.href = 'house_list.html';
+	        	window.location.href = 'index.html';
 	        }
 	    });
 		
 	    /** 导入  **/
 	    $("#importBtn").fancybox({
-	    	'href'  : '/xngzf/archives/importFangyuan.action',
+	    	'href'  : '/index.html',
 	    	'width' : 633,
 	        'height' : 260,
 	        'type' : 'iframe',
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
 	        'onClosed' : function() { 
-	        	window.location.href = 'house_list.html';
+	        	window.location.href = 'index.html';
 	        }
 	    });
 		
@@ -112,38 +117,20 @@
 	        'hideOnOverlayClick' : false,
 	        'showCloseButton' : false,
 	        'onClosed' : function() { 
-	        	window.location.href = 'house_list.html';
+	        	window.location.href = 'index.html';
 	        }
 	    });
 	});
 	/** 用户角色   **/
 	var userRole = '';
 
-	/** 模糊查询来电用户  **/
-	function search(){
-		$("#submitForm").attr("action", "house_list.html?page=" + 1).submit();
-	}
 
 	/** 新增   **/
 	function add(){
-		$("#submitForm").attr("action", "/xngzf/archives/luruFangyuan.action").submit();	
+		$("#submitForm").attr("action", "/index.html").submit();
 	}
 	 
-	/** Excel导出  **/
-	function exportExcel(){
-		if( confirm('您确定要导出吗？') ){
-			var fyXqCode = $("#fyXq").val();
-			var fyXqName = $('#fyXq option:selected').text();
-//	 		alert(fyXqCode);
-			if(fyXqCode=="" || fyXqCode==null){
-				$("#fyXqName").val("");
-			}else{
-//	 			alert(fyXqCode);
-				$("#fyXqName").val(fyXqName);
-			}
-			$("#submitForm").attr("action", "/xngzf/archives/exportExcelFangyuan.action").submit();	
-		}
-	}
+
 	
 	/** 删除 **/
 	function del(fyID){
@@ -222,39 +209,39 @@
 			<div class="ui_content">
 				<div class="ui_text_indent">
 					<div id="box_border">
-						<div id="box_top">搜索</div>
-						<div id="box_center">
-							账户
-							<select name="fangyuanEntity.fyXqCode" id="fyXq" class="ui_select01" onchange="getFyDhListByFyXqCode();">
-                                <option value=""
-                                >--请选择--</option>
-                                <option value="6">苏文龙</option>
-                                <option value="77">赵东旭</option>
-                                <option value="83">郑昊宇</option>
-                            </select>
+<!--						<div id="box_top">搜索</div>-->
+<!--						<div id="box_center">-->
+<!--							账户-->
+<!--							<select name="fangyuanEntity.fyXqCode" id="fyXq" class="ui_select01" onchange="getFyDhListByFyXqCode();">-->
+<!--                                <option value=""-->
+<!--                                >&#45;&#45;请选择&#45;&#45;</option>-->
+<!--                                <option value="6">苏文龙</option>-->
+<!--                                <option value="77">赵东旭</option>-->
+<!--                                <option value="83">郑昊宇</option>-->
+<!--                            </select>-->
 
-							性别
-							<select name="fangyuanEntity.fyDhCode" id="fyDh" class="ui_select01">
-                                <option value="">--请选择--</option>
-                                <option value="6">男</option>
-                                <option value="77">女</option>
-                            </select>
-							积分
-							<select name="fangyuanEntity.fyHxCode" id="fyHx" class="ui_select01">
-                                <option value="">--请选择--</option>
-                                <option value="76">123</option>
-                                <option value="10">456</option>
-                                <option value="14">741</option>
-                                <option value="71">852</option>
-                            </select>
-                            年龄&nbsp;&nbsp;<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" class="ui_input_txt02" />
-							邮箱&nbsp;&nbsp;<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" class="ui_input_txt02" />
-						</div>
-						<div id="box_bottom">
-							<input type="button" value="查询" class="ui_input_btn01" onclick="search();" /> 
-							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" /> 
-							<input type="button" value="删除" class="ui_input_btn01" onclick="batchDel();" /> 
-						</div>
+<!--							性别-->
+<!--							<select name="fangyuanEntity.fyDhCode" id="fyDh" class="ui_select01">-->
+<!--                                <option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+<!--                                <option value="6">男</option>-->
+<!--                                <option value="77">女</option>-->
+<!--                            </select>-->
+<!--							积分-->
+<!--							<select name="fangyuanEntity.fyHxCode" id="fyHx" class="ui_select01">-->
+<!--                                <option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+<!--                                <option value="76">123</option>-->
+<!--                                <option value="10">456</option>-->
+<!--                                <option value="14">741</option>-->
+<!--                                <option value="71">852</option>-->
+<!--                            </select>-->
+<!--                            年龄&nbsp;&nbsp;<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" class="ui_input_txt02" />-->
+<!--							邮箱&nbsp;&nbsp;<input type="text" id="fyZldz" name="fangyuanEntity.fyZldz" class="ui_input_txt02" />-->
+<!--						</div>-->
+<!--						<div id="box_bottom">-->
+<!--							<input type="button" value="查询" class="ui_input_btn01" onclick="search();" /> -->
+<!--							<input type="button" value="新增" class="ui_input_btn01" id="addBtn" /> -->
+<!--							<input type="button" value="删除" class="ui_input_btn01" onclick="batchDel();" /> -->
+<!--						</div>-->
 					</div>
 				</div>
 			</div>
@@ -271,10 +258,10 @@
 							<th>积分</th>
 							<th>注册时间</th>
 							<th>登陆时间</th>
-							<th>状态</th>
+<!--							<th>状态</th>-->
 							<th>操作</th>
 						</tr>
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458579642011" class="acb" /></td>
 								<td>苏文龙</td>
 								<td>123@qq.com</td>
@@ -283,14 +270,14 @@
 								<td>541</td>
 								<td>2020-1-1</td>
 								<td>2020-1-6</td>
-								<td>在线</td>
+<!--								<td>在线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a> 
-									<a href="javascript:del('14458579642011');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458579642011" class="edit">编辑</a> -->
+									<a href="javascript:dell(1);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458625716623" class="acb" /></td>
 								<td>郑浩宇</td>
 								<td>112@qq.om</td>
@@ -299,14 +286,14 @@
 								<td>82</td>
 								<td>2020-1-1</td>
 								<td>2020-1-2</td>
-								<td>离线</td>
+<!--								<td>离线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458625716623" class="edit">编辑</a> 
-									<a href="javascript:del('14458625716623');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458625716623" class="edit">编辑</a> -->
+									<a href="javascript:dell(2);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458592537463" class="acb" /></td>
 								<td>龙小美</td>
 								<td>dfg5411@qq.com</td>
@@ -315,14 +302,14 @@
 								<td>111</td>
 								<td>2016-12-21</td>
 								<td>2020-1-1</td>
-								<td>离线</td>
+<!--								<td>离线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458592537463" class="edit">编辑</a> 
-									<a href="javascript:del('14458592537463');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458592537463" class="edit">编辑</a> -->
+									<a href="javascript:dell(3);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458632171244" class="acb" /></td>
 								<td>亚索</td>
 								<td>521122@qq.cssmoban</td>
@@ -331,14 +318,14 @@
 								<td>7416</td>
 								<td>2000-2-2</td>
 								<td>2020-1-1</td>
-								<td>在线</td>
+<!--								<td>在线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458632171244" class="edit">编辑</a> 
-									<a href="javascript:del('14458632171244');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458632171244" class="edit">编辑</a> -->
+									<a href="javascript:dell(4);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458599318263" class="acb" /></td>
 								<td>谢广坤</td>
 								<td>611@qq.com</td>
@@ -347,14 +334,14 @@
 								<td>541</td>
 								<td>2012-4-27</td>
 								<td>2020-1-1</td>
-								<td>在线</td>
+<!--								<td>在线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458599318263" class="edit">编辑</a> 
-									<a href="javascript:del('14458599318263');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458599318263" class="edit">编辑</a> -->
+									<a href="javascript:dell(5);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458638753194" class="acb" /></td>
 								<td>小花</td>
 								<td>132@qq.com</td>
@@ -362,31 +349,31 @@
 								<td>39</td>
 								<td>55</td>
 								<td>2015-4-25</td>
-								<td>20201-1-1</td>
-								<td>离线</td>
+								<td>2020-1-1</td>
+<!--								<td>离线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458638753194" class="edit">编辑</a> 
-									<a href="javascript:del('14458638753194');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458638753194" class="edit">编辑</a> -->
+									<a href="javascript:dell(6);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458606278350" class="acb" /></td>
 								<td>萧炎</td>
 								<td>5411@qq.com</td>
-								<td>6男</td>
+								<td>男</td>
 								<td>62</td>
 								<td>512</td>
 								<td>2013-6-31</td>
 								<td>2020-1-1</td>
-								<td>离线</td>
+<!--								<td>离线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458606278350" class="edit">编辑</a> 
-									<a href="javascript:del('14458606278350');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458606278350" class="edit">编辑</a> -->
+									<a href="javascript:dell(7);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458644830000" class="acb" /></td>
 								<td>路飞</td>
 								<td>142@qq.com</td>
@@ -395,14 +382,14 @@
 								<td>8412</td>
 								<td>2017-9-30</td>
 								<td>2020-1-1</td>
-								<td>离线</td>
+<!--								<td>离线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458644830000" class="edit">编辑</a> 
-									<a href="javascript:del('14458644830000');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458644830000" class="edit">编辑</a> -->
+									<a href="javascript:dell(8);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458612828548" class="acb" /></td>
 								<td>晓红</td>
 								<td>151@.com</td>
@@ -411,14 +398,14 @@
 								<td>244</td>
 								<td>2011-6-29</td>
 								<td>2020-1-1</td>
-								<td>在线</td>
+<!--								<td>在线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458612828548" class="edit">编辑</a> 
-									<a href="javascript:del('14458612828548');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458612828548" class="edit">编辑</a> -->
+									<a href="javascript:dell(9);">删除</a>
 								</td>
 							</tr>
 						
-							<tr>
+							<tr class="tr">
 								<td><input type="checkbox" name="IDCheck" value="14458619251417" class="acb" /></td>
 								<td>花无缺</td>
 								<td>215@qq.com</td>
@@ -427,42 +414,15 @@
 								<td>2100</td>
 								<td>2019-6-24</td>
 								<td>2020-1-4</td>
-								<td>离线</td>
+<!--								<td>离线</td>-->
 								<td>
-									<a href="house_edit.html?fyID=14458619251417" class="edit">编辑</a> 
-									<a href="javascript:del('14458619251417');">删除</a>
+<!--									<a href="house_edit.html?fyID=14458619251417" class="edit">编辑</a> -->
+									<a href="javascript:dell(10);">删除</a>
 								</td>
 							</tr>
 						
 					</table>
 				</div>
-				<div class="ui_tb_h30">
-					<div class="ui_flt" style="height: 30px; line-height: 30px;">
-						共有
-						<span class="ui_txt_bold04">7</span>
-						条记录，当前第
-						<span class="ui_txt_bold04">1
-						/
-						6</span>
-						页
-					</div>
-					<div class="ui_frt">
-						<!--    如果是第一页，则只显示下一页、尾页 -->
-						
-							<input type="button" value="首页" class="ui_input_btn01" />
-							<input type="button" value="上一页" class="ui_input_btn01" />
-							<input type="button" value="下一页" class="ui_input_btn01"
-								onclick="jumpNormalPage(2);" />
-							<input type="button" value="尾页" class="ui_input_btn01"
-								onclick="jumpNormalPage(6);" />
-						
-						
-						
-						<!--     如果是最后一页，则只显示首页、上一页 -->
-						
-						转到第<input type="text" id="jumpNumTxt" class="ui_input_txt01" />页
-							 <input type="button" class="ui_input_btn01" value="跳转" onclick="jumpInputPage(6);" />
-					</div>
 				</div>
 			</div>
 		</div>
@@ -496,10 +456,49 @@
 	</div>
 </div>
 </div>                <!-- End of Footer -->
-
+	<div class="waifu">
+		<div class="waifu-tips"></div>
+		<canvas id="live2d" class="live2d"></canvas>
+		<div class="waifu-tool">
+			<span class="fui-home"></span>
+			<span class="fui-chat"></span>
+			<span class="fui-eye"></span>
+			<span class="fui-user"></span>
+			<span class="fui-photo"></span>
+			<span class="fui-info-circle"></span>
+			<span class="fui-cross"></span>
+		</div>
+	</div>
 <a href="#top" id="scroll-top"></a>
-
+	<script src="assets/waifu-tips.min.js?v=1.4.2"></script>
+	<script src="assets/live2d.min.js?v=1.0.5"></script>
+	<script type="text/javascript">
+		/* 可直接修改部分参数 */
+		live2d_settings['modelId'] = 1;                  // 默认模型 ID
+		live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+		live2d_settings['modelStorage'] = false;         // 不储存模型 ID
+		live2d_settings['canCloseLive2d'] = false;       // 隐藏 关闭看板娘 按钮
+		live2d_settings['canTurnToHomePage'] = false;    // 隐藏 返回首页 按钮
+		live2d_settings['waifuSize'] = '280x250';        // 看板娘大小
+		live2d_settings['waifuTipsSize'] = '250x70';    // 提示框大小
+		live2d_settings['waifuFontSize'] = '12px';       // 提示框字体
+		live2d_settings['waifuToolFont'] = '14px';       // 工具栏字体
+		live2d_settings['waifuToolLine'] = '20px';       // 工具栏行高
+		live2d_settings['waifuToolTop'] = '0px';       // 工具栏顶部边距
+		live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+		live2d_settings['waifuDraggableRevert'] = false;
+		/* 在 initModel 前添加 */
+		initModel("assets/waifu-tips.json?v=1.4.2")
+	</script>
 <!-- script -->
+	<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+	<script src="/js/live2d.js"></script>
+	<script src="/js/waifu-tips.js"></script>
+	<script type="text/javascript">
+		live2d_settings['modelId'] = 1;
+		live2d_settings['modelTexturesId'] = 87;
+		initModel("json/waifu-tips.json")
+	</script>
 <script type='text/javascript' src='/js/jquery-1.8.3.min.js'></script>
 <script type='text/javascript' src='/js/jquery.easing.1.34e44.js?ver=1.3'></script>
 <script type='text/javascript' src='/js/prettyphoto/jquery.prettyPhotoaeb9.js?ver=3.1.4'></script>
@@ -508,8 +507,16 @@
 <script type='text/javascript' src='/js/jquery.formd471.js?ver=3.18'></script>
 <script type='text/javascript' src='/js/jquery.validate.minfc6b.js?ver=1.10.0'></script>
 <script type='text/javascript' src='/js/custom5152.js?ver=1.0'></script>
-
-</script>
+<script>
+	window.onload = function () {
+		document.cookie = "Admin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	}
+	var tr = $(".tr");
+	var a = 0;
+	function dell(a) {
+		tr[a-1].style.display = "none";
+	}
+	</script>
 </body>
 
 </html>

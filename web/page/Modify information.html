@@ -1,8 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
 <head>
         <!-- META TAGS -->
         <meta charset="UTF-8" />
@@ -13,12 +9,17 @@
         <link rel="shortcut icon" href="/images/favicon.png" />
 
         <!-- Style Sheet-->
-        <!-- <link rel="stylesheet" href="/style.css"/> -->
+        <!-- 实现拖动效果，需引入 JQuery UI -->
+        <script src="assets/jquery-ui.min.js?v=1.12.1"></script>
+        <link rel="stylesheet" type="text/css" href="/css/waifu.css"/>
+        <script src="/js/autoload.js"></script>
+        <script src="/js/jquery-3.4.1.min.js"></script>
         <link rel='stylesheet' id='bootstrap-css-css'  href='/css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
         <link rel='stylesheet' id='responsive-css-css'  href='/css/responsive5152.css?ver=1.0' type='text/css' media='all' />
         <link rel='stylesheet' id='pretty-photo-css-css'  href='/js/prettyphoto/prettyPhotoaeb9.css?ver=3.1.4' type='text/css' media='all' />
         <link rel='stylesheet' id='main-css-css'  href='/css/main5152.css?ver=1.0' type='text/css' media='all' />
         <link rel='stylesheet' id='custom-css-css'  href='/css/custom5152.html?ver=1.0' type='text/css' media='all' />
+
 
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -37,7 +38,7 @@
 
                         <div class="logo-container">
                                 <!-- Website Logo -->
-                                <h4 title="公益之家" style="color: rgb(255, 255, 255)" >公益之家</h4>
+                                <h4 title="公益之家" onclick="window.location.href='../index.html'" style="color: rgb(255, 255, 255);width: 144px; height: 40px;" ><img src="../images/qqq.png"/></h4>
 
                                 <!-- <span class="tag-line">Premium WordPress Theme</span> -->
                         </div>
@@ -103,34 +104,34 @@
                                 </article>
 
 
-                                <form id="contact-form" class="row" action="/userinfo" method="post">
+                                <form id="contact-form" class="row" action="/userinfo" method="post" onsubmit="return CheckPost();">
 
                                         <div class="span2">
                                                 <label for="name">名字<span>*</span> </label>
                                         </div>
                                         <div class="span6">
-                                                <input type="text" name="name" id="name" class="required input-xlarge" value="" title="*请输入您的名字">
+                                                <input type="text" name="name" id="name" value="asasdasd" class="required input-xlarge">
                                         </div>
 
                                         <div class="span2">
                                                 <label for="email">邮箱<span>*</span></label>
                                         </div>
                                         <div class="span6">
-                                                <input type="text" name="email" id="email" class="email required input-xlarge" value="" title="*请输入您的邮箱">
+                                                <input type="text" name="email" id="email" class="email required input-xlarge">
                                         </div>
 
                                         <div class="span2">
-                                                <label >性别</label>
+                                                <label for="reason">性别</label>
                                         </div>
                                         <div class="span6">
-                                                <input type="text" name="reason" id="reason" class="input-xlarge" value="">
+                                                <input type="text" name="reason" id="reason" class="input-xlarge">
                                         </div>
 
                                         <div class="span2">
-                                                <label >年龄<span>*</span> </label>
+                                                <label for="sex">年龄<span>*</span> </label>
                                         </div>
                                         <div class="span6">
-                                                <input type="text" name="name" id="name" class="required input-xlarge" value="" title="*请输入您的年龄">
+                                                <input type="text" name="sex" id="sex" class="required input-xlarge">
                                         </div>
                                         <!-- <div class="span2">
                                                 <label for="message">电话号码<span>*</span> </label>
@@ -145,8 +146,8 @@
                                                 <input type="text" name="name" id="name" class="required input-xlarge" value="" title="*请输入您的爱好">
                                         </div> -->
                                         <div class="span6 offset2 bm30">
-                                                <input type="submit" name="submit" value="确认修改" class="btn btn-inverse">
-                                                <img src="images/loading.gif" id="contact-loader" alt="Loading...">
+                                                <input type="submit" name="submit" value="确认修改" class="btn btn-inverse" id="aaa">
+                                                <img src="/images/loading.gif" id="contact-loader1" alt="Loading..." style="display: none">
                                         </div>
 
                                         <div class="span6 offset2 error-container"></div>
@@ -157,10 +158,14 @@
                         <!-- end of page content -->
                         <div class="dd">
                                 <div class="toxiang">
-                                        <img src="/images/tx.jpeg">
-                                        <div class="zhaopian"><input type="button"  name="tupiananniu" value="上传图片"></div>
+                                        <form method="post" action="/upload" enctype="multipart/form-data">
+                                                <label for="ff"><input name="uploadFile" type="file" style="display: none"  id="ff"/><img id="touxiang" src="/images/tx.jpeg" style="margin-left: -30px;margin-top:
+                                                58px;width: 200px;height: 200px;"></label>
+                                                <br>
+                                                <div class="zhaopian">
+                                                        <input type="submit"  name="tupiananniu" value="上传图片"></div>
+                                        </form>
                                 </div>
-                                <img src="/images/loading.gif" id="contact-loader" alt="Loading...">
                         </div>
 
                         <!-- start of sidebar -->
@@ -198,21 +203,116 @@
         </div>
 </div>
 <!-- End of Footer Bottom -->
-
+<div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool">
+                <span class="fui-home"></span>
+                <span class="fui-chat"></span>
+                <span class="fui-eye"></span>
+                <span class="fui-user"></span>
+                <span class="fui-photo"></span>
+                <span class="fui-info-circle"></span>
+                <span class="fui-cross"></span>
+        </div>
+</div>
 </footer>
 <!-- End of Footer -->
 
 <a href="#top" id="scroll-top"></a>
 
 <!-- script -->
-<script type='text/javascript' src='/js/jquery-1.8.3.min.js'></script>
-<script type='text/javascript' src='/js/jquery.easing.1.3.js'></script>
-<script type='text/javascript' src='/js/prettyphoto/jquery.prettyPhoto.js'></script>
-<script type='text/javascript' src='/js/jflickrfeed.js'></script>
-<script type='text/javascript' src='/js/jquery.liveSearch.js'></script>
-<script type='text/javascript' src='/js/jquery.form.js'></script>
-<script type='text/javascript' src='/js/jquery.validate.min.js'></script>
-<script type='text/javascript' src='/js/custom.js'></script>
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="/js/live2d.js"></script>
+<script src="/js/waifu-tips.js"></script>
+<script src="/js/jquery-ui.min.js?v=1.12.1"></script>
+<script type="text/javascript">
+        live2d_settings['modelId'] = 1;
+        live2d_settings['modelTexturesId'] = 87;
+        initModel("json/waifu-tips.json")
+</script>
+<script src="assets/waifu-tips.min.js?v=1.4.2"></script>
+<script src="assets/live2d.min.js?v=1.0.5"></script>
+<script type="text/javascript">
+        /* 可直接修改部分参数 */
+        live2d_settings['modelId'] = 1;                  // 默认模型 ID
+        live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+        live2d_settings['modelStorage'] = false;         // 不储存模型 ID
+        live2d_settings['canCloseLive2d'] = false;       // 隐藏 关闭看板娘 按钮
+        live2d_settings['canTurnToHomePage'] = false;    // 隐藏 返回首页 按钮
+        live2d_settings['waifuSize'] = '280x250';        // 看板娘大小
+        live2d_settings['waifuTipsSize'] = '250x70';    // 提示框大小
+        live2d_settings['waifuFontSize'] = '12px';       // 提示框字体
+        live2d_settings['waifuToolFont'] = '14px';       // 工具栏字体
+        live2d_settings['waifuToolLine'] = '20px';       // 工具栏行高
+        live2d_settings['waifuToolTop'] = '0px';       // 工具栏顶部边距
+        live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+        live2d_settings['waifuDraggableRevert'] = false;
+        /* 在 initModel 前添加 */
+        initModel("assets/waifu-tips.json?v=1.4.2")
+</script>
+<!--&lt;!&ndash;<script type='text/javascript' src='/js/jquery-1.8.3.min.js'></script>-->
+<script type='text/javascript' src='/js/jquery-3.4.1.min.js'></script>
+<!--<script type='text/javascript' src='/js/jquery.easing.1.3.js'></script>-->
+<!--<script type='text/javascript' src='/js/prettyphoto/jquery.prettyPhoto.js'></script>-->
+<!--<script type='text/javascript' src='/js/jflickrfeed.js'></script>-->
+<!--<script type='text/javascript' src='/js/jquery.liveSearch.js'></script>-->
+<!--<script type='text/javascript' src='/js/jquery.form.js'></script>-->
+<!--<script type='text/javascript' src='/js/jquery.validate.min.js'></script>-->
+<!--<script type='text/javascript' src='/js/custom.js'></script>-->
+<script>
+        $("#aaa").onclick =function () {
+                $("#contact-loader1").style.display = "";
+        };
+        $.ajax({
+                url: "/image",    //请求的url地址
+                data: {"uid":1},    //参数值
+                type: "POST",
+                async:true,
+                dataType: "json",
+                success: function (data) {
+                        $("#touxiang").attr("src", data.path);
+                }
+        });
+        console.log($("#name").val());
+        // console.log($("#name").val);
+        // console.log(document.getElementById("name"));
+        // console.log(document.getElementById("name").value);
+        // console.log(document.getElementById("name").val());
+        function CheckPost(){
 
+                if($("#name").val()== null ||$("#name").val() == ""){
+                        alert('请输入用户名');return false;
+                }else if($("#email").val() == null || $("#email").val()== "" ){
+                        alert('请输入邮箱');return false;
+                }else if( $("#reason").val()==null ||  $("#reason").val()==""){
+                        alert('请输入性别');return false;
+                }else if($("#sex").val()==null || $("#sex").val()==""){
+                        alert('请输入年龄');return false;
+                }else{
+                        var reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+                        var rqel = /^.([a-zA-Z]{7,16})$/;
+
+                        if(rqel.test($(".name").val())){
+                                if(reg.test($("#email").val())){
+                                        if($("#reason").val() == "男" || $("#reason").val() == "女"){
+                                                if(parseInt($("#sex").val()) > 0 && parseInt($("#sex").val()) < 150){
+                                                        return true;
+                                                }else{
+                                                        alert("你好像年龄不太对");return false;
+                                                }
+                                        }else{
+                                                alert("没有其他性别偶");return false;
+                                        }
+                                }else{
+                                        alert("邮箱格式不正确");return false;
+                                }
+                        }else{
+                                alert("用户名要8到16位的字母哦！！！");return false;
+                        }
+
+                }
+        }
+</script>
 </body>
 </html>

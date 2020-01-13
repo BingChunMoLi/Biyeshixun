@@ -23,29 +23,34 @@ import java.io.PrintWriter;
 @WebServlet(name = "Userinfo",urlPatterns = "/userinfo")
 public class Userinfo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setHeader("content-type", "text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         HttpSession session = request.getSession();
         Object session1 = session.getAttribute("User");
-        System.out.println(session1);
-//        System.out.println(session.getAttribute("User"));
-        User u = new User();
-        Integer uid = (Integer) session1;
-        u.setUID(uid);
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-        String sex = request.getParameter("reason");
-        String age = request.getParameter("name");
-        UserAddachieve userAddachieve = new UserAddachieve();
-        Cookie[] cookie = request.getCookies();
-        for (Cookie co:cookie) {
-            System.out.println(co.getName() + ":" + co.getValue());
+        if (session1 == null){
+        out.print("请登录。正在跳转登录...");
+        response.setHeader("refresh", "3;url=/page/login/login.html");
+        }else {
+            User u = new User();
+            Integer uid = (Integer) session1;
+            u.setUID(uid);
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            String sex = request.getParameter("reason");
+            String age = request.getParameter("name");
+            UserAddachieve userAddachieve = new UserAddachieve();
+            Cookie[] cookie = request.getCookies();
+            for (Cookie co : cookie) {
+                System.out.println(co.getName() + ":" + co.getValue());
+            }
+            userAddachieve.update("User", 4, "name=?,email=?,sex=?,age=?", name, email, sex, age, "uid", uid);
+//        Ajax.Ajax("更新信息成功",response);
+            out.print("更新信息成功，三秒后跳转主页面");
+            response.setHeader("refresh", "3;url=/index.html");
         }
-        try {
-            userAddachieve.update("User",4,"name=?,email=?,sex=?,age=?",name,email,sex,age,"uid",uid);
-        }catch (Exception e){
-            System.out.println(e);
-        }
-        Ajax.Ajax("更新信息成功",response);
     }
 
 

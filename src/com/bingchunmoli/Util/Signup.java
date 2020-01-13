@@ -35,7 +35,7 @@ public class Signup extends HttpServlet {
                 if (session.getAttribute(username) == null) {
                     UserAddachieve user = new UserAddachieve();
                     password = SHA1.getSha1(password);
-                    user.add("User",4,"name", "email", "password", "signupdata",username,email,password,new Date().getTime());
+                     user.add("User",4,"name", "email", "password", "signupdata",username,email,password,new Date().getTime());
                     out.print("注册成功");
                 } else {
                     response.sendRedirect("/page/login/login.html");

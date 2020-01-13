@@ -7,16 +7,160 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320c7974-fd76-4f60-a208-60f90afc121d" name="Default Changelist" comment="登录，OK">
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Pinglun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Tizi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Userinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Deltiezi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Jijin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Pldao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Searchimage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Searchtiezi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Tie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Tizidao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/U.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/updao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bingchunmoli/View/TT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/autoload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/live2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/live2d.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/waifu-tips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/waifu-tips.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/waifu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/waifu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/Moe-Mashiro.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/form-elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/live2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/waifu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/waifu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/mmkko.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/qqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/uuii.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/autoload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.11.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.backstretch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.backstretch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/live2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/live2d.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/live2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/sdsd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/waifu-tips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/waifu-tips.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/json/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/live2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/autoload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/live2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/live2d.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/waifu-tips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/waifu-tips.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/waifu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/assets/waifu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/b/boos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/json/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/autoload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/live2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/live2d.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/waifu-tips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/waifu-tips.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/waifu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/assets/waifu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/login/json/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/autoload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/live2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/live2d.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/waifu-tips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/waifu-tips.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/waifu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/assets/waifu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/page/signup/json/waifu-tips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/video/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/video/159.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Additions.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Pinglun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Tizi.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Upload.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAddachieve.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Dao/Userinfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/User.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/Userimage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/bingchunmoli/Obj/guanggao.class" beforeDir="false" />
@@ -10752,7 +10896,7 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/data-access-appendix.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/data-access.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/docinfo-footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/docinfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/docinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/b.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/images/DataAccessException.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/lib/spring/docs/spring-framework-reference/images/aop-proxy-call.png" beforeDir="false" />
@@ -11385,9 +11529,12 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/网页定义.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Additions.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Pinglun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Tizi.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Upload.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAddachieve.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/UserAdditions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Dao/Userinfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/User.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/Userimage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Obj/guanggao.class" beforeDir="false" />
@@ -11401,14 +11548,22 @@
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Util/SHA1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Util/Signup.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/毕业设计/com/bingchunmoli/Util/login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Pinglun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Pinglun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Tizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Tizi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Upload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Upload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Test/JavaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Dao/Userinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Obj/tiezi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Obj/Tiezi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Util/Ajax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/Ajax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Util/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/Signup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bingchunmoli/Util/login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/blue.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/blue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/main5152.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main5152.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/green.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/green.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/custom5152.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/custom5152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/Administrators.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Administrators.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/Charitable donations.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Charitable donations.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/Commentary.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Commentary.html" afterDir="false" />
@@ -11418,9 +11573,13 @@
       <change beforePath="$PROJECT_DIR$/web/page/Others view information page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Others view information page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/Reply page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/Reply page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/articles-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/articles-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/js/yanzhengma.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/js/yanzhengma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/login/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/personal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/page/pll.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/pll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page/signup/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/page/signup/zhuce.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/red.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/red.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/毕业设计.iml" beforeDir="false" afterPath="$PROJECT_DIR$/毕业设计.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11498,19 +11657,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="D:/Java环境" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/fastjson/fastjson-1.2.62.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Github\Biyesheji\web\js" />
+      <recent name="D:\Github\Biyesheji\web\css" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.bingchunmoli.Test" />
       <recent name="com.bingchunmoli" />
       <recent name="com.bingchunmoli.Util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\Biyesheji\web" />
       <recent name="D:\Github\Biyesheji\web\WEB-INF" />
       <recent name="D:\Github\Biyesheji\src\com\bingchunmoli\Util" />
     </key>
@@ -11676,7 +11840,8 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Test@blog.bingchunmoli.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -11684,6 +11849,9 @@
         </serviceView>
       </list>
     </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -11738,7 +11906,22 @@
       <workItem from="1578552006982" duration="11283000" />
       <workItem from="1578563400622" duration="9285000" />
       <workItem from="1578573258213" duration="2628000" />
-      <workItem from="1578578120626" duration="13916000" />
+      <workItem from="1578578120626" duration="33857000" />
+      <workItem from="1578623811922" duration="1294000" />
+      <workItem from="1578626241469" duration="2044000" />
+      <workItem from="1578628696673" duration="11875000" />
+      <workItem from="1578642611248" duration="3225000" />
+      <workItem from="1578652034378" duration="10101000" />
+      <workItem from="1578662676601" duration="4451000" />
+      <workItem from="1578669510417" duration="1004000" />
+      <workItem from="1578670636708" duration="3112000" />
+      <workItem from="1578674001564" duration="11910000" />
+      <workItem from="1578686360954" duration="6629000" />
+      <workItem from="1578699283445" duration="3535000" />
+      <workItem from="1578704229343" duration="7982000" />
+      <workItem from="1578714378124" duration="1383000" />
+      <workItem from="1578721127307" duration="2046000" />
+      <workItem from="1578726914477" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="Link Mysql OK">
       <created>1578283739779</created>
@@ -11812,16 +11995,16 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="347" y="123" key="#Tomcat_Server/62.0.1474.864@62.0.1474.864" timestamp="1578488896794" />
-    <state x="312" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578588201793">
+    <state x="312" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578652131064">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="210" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578296724281" />
-    <state x="312" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1578588201793" />
-    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1578374250329">
+    <state x="312" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1578652131064" />
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1578611265247">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578295765753" />
-    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1578374250329" />
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1578611265247" />
     <state x="485" y="248" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578296721716">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -11830,10 +12013,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="347" y="123" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/62.0.1474.864@62.0.1474.864" timestamp="1578488859122" />
-    <state x="579" y="316" width="439" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578217799608">
+    <state x="579" y="316" width="439" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578624233089">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="579" y="316" width="439" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1474.864@62.0.1474.864" timestamp="1578217799608" />
+    <state x="579" y="316" width="439" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1474.864@62.0.1474.864" timestamp="1578624233089" />
     <state x="572" y="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1578215731631">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -11842,10 +12025,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="681" y="134" key="#xdebugger.evaluate/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578302878716" />
-    <state x="62" y="25" key="CommitChangelistDialog2" timestamp="1578551805581">
+    <state x="104" y="14" key="CommitChangelistDialog2" timestamp="1578655215155">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="62" y="25" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1578551805581" />
+    <state x="104" y="14" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1578655215155" />
     <state x="576" y="153" key="DetectedRootsChooserDialog" timestamp="1578492028746">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -11855,104 +12038,104 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="DiffContextDialog/62.0.1474.864@62.0.1474.864" timestamp="1578535905780" />
-    <state x="364" y="192" key="FileChooserDialogImpl" timestamp="1578555822361">
+    <state x="364" y="192" key="FileChooserDialogImpl" timestamp="1578688130566">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="498" y="179" key="FileChooserDialogImpl/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294405094" />
-    <state x="364" y="192" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1578555822361" />
-    <state width="981" height="229" key="GridCell.Tab.0.bottom" timestamp="1578592379409">
+    <state x="364" y="192" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1578688130566" />
+    <state width="981" height="231" key="GridCell.Tab.0.bottom" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="981" height="229" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578592379409" />
-    <state width="981" height="229" key="GridCell.Tab.0.center" timestamp="1578592379408">
+    <state width="981" height="231" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.0.center" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990455" />
-    <state width="981" height="229" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578592379408" />
-    <state width="981" height="229" key="GridCell.Tab.0.left" timestamp="1578592379408">
+    <state width="981" height="231" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.0.left" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990450" />
-    <state width="981" height="229" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578592379408" />
-    <state width="981" height="229" key="GridCell.Tab.0.right" timestamp="1578592379409">
+    <state width="981" height="231" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.0.right" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.0.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990460" />
-    <state width="981" height="229" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578592379409" />
-    <state width="981" height="229" key="GridCell.Tab.1.bottom" timestamp="1578592370314">
+    <state width="981" height="231" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.1.bottom" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="981" height="229" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578592370314" />
-    <state width="981" height="229" key="GridCell.Tab.1.center" timestamp="1578592370314">
+    <state width="981" height="231" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.1.center" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="981" height="229" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1578592370314" />
-    <state width="981" height="229" key="GridCell.Tab.1.left" timestamp="1578592370314">
+    <state width="981" height="231" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.1.left" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990461" />
-    <state width="981" height="229" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1578592370314" />
-    <state width="981" height="229" key="GridCell.Tab.1.right" timestamp="1578592370314">
+    <state width="981" height="231" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.1.right" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.1.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="981" height="229" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1578592370314" />
-    <state width="981" height="229" key="GridCell.Tab.2.bottom" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.2.bottom" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.bottom/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990464" />
-    <state width="981" height="229" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
-    <state width="981" height="229" key="GridCell.Tab.2.center" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.2.center" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.center/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="981" height="229" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
-    <state width="981" height="229" key="GridCell.Tab.2.left" timestamp="1578592370314">
+    <state width="981" height="231" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.2.left" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.left/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990462" />
-    <state width="981" height="229" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1578592370314" />
-    <state width="981" height="229" key="GridCell.Tab.2.right" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.2.right" timestamp="1578728403100">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="981" height="224" key="GridCell.Tab.2.right/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303990463" />
-    <state width="981" height="229" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
-    <state width="981" height="229" key="GridCell.Tab.3.bottom" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1578728403100" />
+    <state width="981" height="231" key="GridCell.Tab.3.bottom" timestamp="1578689331582">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="229" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
-    <state width="981" height="229" key="GridCell.Tab.3.center" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1578689331582" />
+    <state width="981" height="231" key="GridCell.Tab.3.center" timestamp="1578689331582">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="229" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
-    <state width="981" height="229" key="GridCell.Tab.3.left" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1578689331582" />
+    <state width="981" height="231" key="GridCell.Tab.3.left" timestamp="1578689331582">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="229" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
-    <state width="981" height="229" key="GridCell.Tab.3.right" timestamp="1578592370315">
+    <state width="981" height="231" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1578689331582" />
+    <state width="981" height="231" key="GridCell.Tab.3.right" timestamp="1578689331582">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="981" height="229" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1578592370315" />
+    <state width="981" height="231" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1578689331582" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1578575307001">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/62.0.1474.864@62.0.1474.864" timestamp="1578575307001" />
-    <state x="301" y="13" key="SettingsEditor" timestamp="1578555824049">
+    <state x="301" y="13" key="SettingsEditor" timestamp="1578716243865">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="301" y="13" key="SettingsEditor/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294409336" />
-    <state x="301" y="13" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1578555824049" />
+    <state x="301" y="13" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1578716243865" />
     <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1578546772320">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1578546772320" />
-    <state width="744" height="439" key="XDebugger.FullValuePopup" timestamp="1578558594634">
+    <state width="744" height="439" key="XDebugger.FullValuePopup" timestamp="1578688010149">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="744" height="439" key="XDebugger.FullValuePopup/62.0.1474.864@62.0.1474.864" timestamp="1578558594634" />
+    <state width="744" height="439" key="XDebugger.FullValuePopup/62.0.1474.864@62.0.1474.864" timestamp="1578688010149" />
     <state x="699" y="319" width="340" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578572972672">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -11961,19 +12144,23 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="380" y="87" key="com.intellij.database.dbimport.ImportDialog/62.0.1474.864@62.0.1474.864" timestamp="1578573548412" />
-    <state x="910" y="43" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578569531857">
+    <state x="530" y="237" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1578654197670">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="910" y="43" key="com.intellij.database.run.ParametersPanel.Standalone/62.0.1474.864@62.0.1474.864" timestamp="1578569531857" />
-    <state x="908" y="122" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578590566102">
+    <state x="530" y="237" key="com.intellij.database.dbimport.ImportUtil.MyDialog/62.0.1474.864@62.0.1474.864" timestamp="1578654197670" />
+    <state x="910" y="43" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578609974206">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="908" y="122" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/62.0.1474.864@62.0.1474.864" timestamp="1578590566102" />
-    <state x="480" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1578578125547">
+    <state x="910" y="43" key="com.intellij.database.run.ParametersPanel.Standalone/62.0.1474.864@62.0.1474.864" timestamp="1578609974206" />
+    <state x="295" y="92" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578690136158">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="295" y="92" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/62.0.1474.864@62.0.1474.864" timestamp="1578690136158" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1578726916350">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578303480038" />
-    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1578578125547" />
+    <state x="480" y="256" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1578726916350" />
     <state x="370" y="77" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1578568189790">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -11988,13 +12175,114 @@
     </state>
     <state x="-1871" y="-6" width="1213" height="735" maximized="true" key="dock-window-2/62.0.1474.864/-1920.0.1280.680@62.0.1474.864" timestamp="1578294570465" />
     <state x="-1637" y="0" width="1011" height="735" maximized="true" key="dock-window-2/62.0.1474.864@62.0.1474.864" timestamp="1578292758909" />
-    <state x="456" y="197" key="run.anything.popup" timestamp="1578562511305">
+    <state x="456" y="197" key="run.anything.popup" timestamp="1578653186638">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="456" y="197" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1578562511305" />
-    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1578591130528">
+    <state x="456" y="197" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1578653186638" />
+    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1578681885074">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1578591130528" />
+    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1578681885074" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/SHA1.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Util/Signup.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/UserAddachieve.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/Jijin.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/Jijin.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/Jijin.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/Jijin.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bingchunmoli/Dao/searchtz.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

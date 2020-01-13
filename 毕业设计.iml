@@ -32,5 +32,6 @@
     <orderEntry type="library" name="mssql-jdbc-7.4.1.jre11-shaded" level="project" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="fastjson-1.2.62" level="project" />
+    <orderEntry type="library" name="commons-fileupload-1.4" level="project" />
   </component>
 </module>

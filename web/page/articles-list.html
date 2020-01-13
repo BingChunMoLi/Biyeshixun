@@ -11,25 +11,29 @@
                 <title>公益之家</title>
 
                 <link rel="shortcut icon" href="/images/favicon.png" />
-
-
-                
-
                 <!-- Style Sheet-->
+                <!-- 实现拖动效果，需引入 JQuery UI -->
+                <script src="/js/jquery-3.4.1.min.js"></script>
+                <script src="assets/jquery-ui.min.js?v=1.12.1"></script>
                 <!-- <link rel="stylesheet" href="/style.css"/> -->
+                <link rel="stylesheet" type="text/css" href="/css/waifu.css"/>
+<!--                <script src="/js/autoload.js"></script>-->
+<!--                <script src="/js/jquery-3.4.1.min.js"></script>-->
+
                 <link rel='stylesheet' id='bootstrap-css-css'  href='/css/bootstrap5152.css?ver=1.0' type='text/css' media='all' />
                 <link rel='stylesheet' id='responsive-css-css'  href='/css/responsive5152.css?ver=1.0' type='text/css' media='all' />
                 <link rel='stylesheet' id='pretty-photo-css-css'  href='/js/prettyphoto/prettyPhotoaeb9.css?ver=3.1.4' type='text/css' media='all' />
                 <link rel='stylesheet' id='main-css-css'  href='/css/main5152.css?ver=1.0' type='text/css' media='all' />
                 <link rel='stylesheet' id='custom-css-css'  href='/css/custom5152.html?ver=1.0' type='text/css' media='all' />
-
-
-                <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-                <!--[if lt IE 9]>
-                <script src="js/html5.js"></script></script>
-                <![endif]-->
-
-
+                <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+                <style>
+                        body{
+                                width:100%;
+                        }
+                </style>
+                <script src="assets/waifu-tips.min.js?v=1.4.2"></script>
+                <script src="assets/live2d.min.js?v=1.0.5"></script>
+                <script src="/js/sdsd.js"></script>
         </head>
 
         <body>
@@ -42,7 +46,7 @@
 
                                         <div class="logo-container">
                                                 <!-- Website Logo -->
-                                                <h4 title="公益之家" style="color: rgb(255, 255, 255)" >公益之家</h4>
+                                                <h4 title="公益之家" style="color: rgb(255, 255, 255);width: 144px; height: 40px;" ><img src="../images/qqq.png"/></h4>
                                                         
                                                 <!-- <span class="tag-line">Premium WordPress Theme</span> -->
                                         </div>
@@ -110,18 +114,19 @@
                                                         <header class="clearfix">
 
                                                                 <h3 class="post-title">
-                                                                        <a href="https://baijiahao.baidu.com/s?id=1655056243912930069&wfr=spider&for=pc">白鲟灭绝</a>
+                                                                        <a href="https://baijiahao.baidu.com/s?id=1655056243912930069&wfr=spider&for=pc" class="title1">白鲟灭绝</a>
                                                                 </h3>
 
                                                                 <div class="post-meta clearfix">
+                                                                        <span class="uid"></span>
                                                                         <span class="date">1 Feb, 2020</span>
                                                                         <span class="comments"><a href="/page/Commentary.html" title="Comment on Integrating WordPress with Your Website">评论</a></span>
-                                                                        
+                                                                        <a href="#" class="del"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</a>
                                                                 </div>
 
                                                         </header>
 
-                                                        <p>长江白鲟（学名：Psephurus gladius），或称作中华匙吻鲟，和生活在密西西比河的匙吻鲟同属匙吻鲟科的亚种。因为其生存水域遭受破坏，物种稀少，所以有“水中大熊猫”之称。
+                                                        <p class="article">长江白鲟（学名：Psephurus gladius），或称作中华匙吻鲟，和生活在密西西比河的匙吻鲟同属匙吻鲟科的亚种。因为其生存水域遭受破坏，物种稀少，所以有“水中大熊猫”之称。
                                                                 其个体腹部黑白色头部灰色，种群多生活于长江中下游水域，个别的生存于水域广阔的湖泊中。古语云“千斤腊子，万斤象。”“象”指白鲟，据说它可以长到上万斤。实际上成鱼可长达三米以上，是世界十种最大的淡水鱼之一。根据动物学家秉志记载20世纪五十年代有渔民捕获过七米长的白鲟，虽然该记录没有获得确认。
                                                                  . . . <a class="readmore-link" href="https://baijiahao.baidu.com/s?id=1655056243912930069&wfr=spider&for=pc">阅读更多</a></p>
 
@@ -132,18 +137,19 @@
                                                         <header class="clearfix">
 
                                                                 <h3 class="post-title">
-                                                                        <a href="https://new.qq.com/omn/20180810/20180810A1EVUH.html?pc">河流污染</a>
+                                                                        <a href="https://new.qq.com/omn/20180810/20180810A1EVUH.html?pc" class="title1">河流污染</a>
                                                                 </h3>
 
                                                                 <div class="post-meta clearfix">
+                                                                        <span class="uid"></span>
                                                                         <span class="date">1 Feb, 2020</span>
                                                                         <span class="comments"><a href="/page/Commentary.html" title="Comment on Using Javascript">评论</a></span>
-                                                                        
+                                                                        <a href="#" class="del"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</a>
                                                                 </div>
 
                                                         </header>
 
-                                                        <p>生活垃圾、稻田的秸秆、农药瓶罐直接往河里或者河流的周围倒，使河流变成垃圾场；生活废水直接往河里排放，污染了水质；化粪池建构的不合理，直接未经完全化解就排入水中，河水变成臭水沟；上游的造纸厂老将带石灰的废水排入水中，使鱼大量死亡，藻类猛增；周围的村民建房子的泥沙直接从河里抽取或从河岸取得，严重破坏了整条河的生态坏境，也削弱了河边的竹林时不时就会成片的被砍来当柴火，破坏了河岸两旁的植被和水土，削弱了竹林生态调节的作用。. . . <a class="readmore-link" href="https://www.yiban.cn/blog/index/otherblog/blogid/38725/suid/5251111">阅读更多</a></p>
+                                                        <p class="article">生活垃圾、稻田的秸秆、农药瓶罐直接往河里或者河流的周围倒，使河流变成垃圾场；生活废水直接往河里排放，污染了水质；化粪池建构的不合理，直接未经完全化解就排入水中，河水变成臭水沟；上游的造纸厂老将带石灰的废水排入水中，使鱼大量死亡，藻类猛增；周围的村民建房子的泥沙直接从河里抽取或从河岸取得，严重破坏了整条河的生态坏境，也削弱了河边的竹林时不时就会成片的被砍来当柴火，破坏了河岸两旁的植被和水土，削弱了竹林生态调节的作用。. . . <a class="readmore-link" href="https://www.yiban.cn/blog/index/otherblog/blogid/38725/suid/5251111">阅读更多</a></p>
 
                                                 </article>
 
@@ -152,20 +158,21 @@
                                                         <header class="clearfix">
 
                                                                 <h3 class="post-title">
-                                                                        <a href="/page/personal.html">全球变暖</a>
+                                                                        <a href="/page/personal.html" class="title1">全球变暖</a>
                                                                 </h3>
 
                                                                 <div class="post-meta clearfix">
+                                                                        <span class="uid"></span>
                                                                         <span class="date">1 Feb, 2020</span>
                                                                         <span class="comments"><a href="/page/Commentary.html" title="Comment on Using Images">评论</a></span>
-                                                                        
+                                                                        <a href="#" class="del"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</a>
                                                                 </div>
 
                                                         </header>
 
                                                         <a href="#" title="Using Images"><img width="770" height="501" src="/images/115566.jpg" class="attachment-std-thumbnail wp-post-image" alt="Living room"></a>
 
-                                                        <p>“全球气候变暖所带来的热能，会提供给空气和海洋巨大的动能，从而形成大型、甚至超大型台风、飓风、海啸等灾难。气温升高不单会从海洋直接吸取水分，还会从陆地吸取水分，使得内陆地区大面积干旱，粮食减产。”. . . <a class="readmore-link" href="https://new.qq.com/omn/20191230/20191230A0JZL700.html">阅读更多</a></p>
+                                                        <p class="article">“全球气候变暖所带来的热能，会提供给空气和海洋巨大的动能，从而形成大型、甚至超大型台风、飓风、海啸等灾难。气温升高不单会从海洋直接吸取水分，还会从陆地吸取水分，使得内陆地区大面积干旱，粮食减产。”. . . <a class="readmore-link" href="https://new.qq.com/omn/20191230/20191230A0JZL700.html">阅读更多</a></p>
 
                                                 </article>
 
@@ -174,13 +181,14 @@
                                                         <header class="clearfix">
 
                                                                 <h3 class="post-title">
-                                                                        <a href="/page/personal.html">蓝色星球</a>
+                                                                        <a href="/page/personal.html" class="title1">蓝色星球</a>
                                                                 </h3>
 
                                                                 <div class="post-meta clearfix">
+                                                                        <span class="uid"></span>
                                                                         <span class="date">24 Feb, 2020</span>                                                                       
                                                                         <span class="comments"><a href="/page/Commentary.html" title="Comment on Using Video">评论</a></span>
-
+                                                                        <a href="#" class="del"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</a>
                                                                         
                                                                 </div>
 
@@ -191,7 +199,7 @@
                                                                 </div>
                                                         </div>
 
-                                                        <p>　每天见不同的人，每个人几乎在说不快乐的事，事业成功的说工作压力大，工作清闲的人说这行业没前途，没有成家的说为什么还遇不到适合自己的人，遇到的却说不合适，幸福相足球一样踢来踢去，烦恼相奖杯一样不可撒手。 . . . <a class="readmore-link" href="https://www.duanwenxue.com/z/baohuhuanjing/">阅读更多</a></p>
+                                                        <p class="article">　每天见不同的人，每个人几乎在说不快乐的事，事业成功的说工作压力大，工作清闲的人说这行业没前途，没有成家的说为什么还遇不到适合自己的人，遇到的却说不合适，幸福相足球一样踢来踢去，烦恼相奖杯一样不可撒手。 . . . <a class="readmore-link" href="https://www.duanwenxue.com/z/baohuhuanjing/">阅读更多</a></p>
 
                                                 </article>
 
@@ -200,29 +208,24 @@
                                                         <header class="clearfix">
 
                                                                 <h3 class="post-title">
-                                                                        <a href="https://baijiahao.baidu.com/s?id=1642996787906966855&wfr=spider&for=pc">塑料垃圾的危害</a>
+                                                                        <a href="https://baijiahao.baidu.com/s?id=1642996787906966855&wfr=spider&for=pc" class="title1">塑料垃圾的危害</a>
                                                                 </h3>
 
                                                                 <div class="post-meta clearfix">
+                                                                        <span class="uid"></span>
                                                                         <span class="date">24 Feb, 2020</span>
                                                                         <span class="comments"><a href="/page/Commentary.html" title="Comment on WordPress Site Maintenance">评论</a></span>
-
+                                                                        <a href="#" class="del"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</a>
                                                                         
                                                                 </div>
 
                                                         </header>
 
-                                                        <p>“塑料垃圾也称为“白色污染”,是当今世界重大的“公害”,已成为威胁生态环境的一个重要因素。因此,怎样解决“白色污染”问题,是当今世界各国政府以及社会各界一切有识之士高度重视的公共课题。 塑料制品广泛使用曾给人们带来了许多方便和巨大的财富,但是,塑料垃圾也给人们带来了许多烦恼,更给人们带来灾难。 . . . <a class="readmore-link" href="https://baijiahao.baidu.com/s?id=1642996787906966855&wfr=spider&for=pc">阅读更多</a></p>
+                                                        <p class="article">“塑料垃圾也称为“白色污染”,是当今世界重大的“公害”,已成为威胁生态环境的一个重要因素。因此,怎样解决“白色污染”问题,是当今世界各国政府以及社会各界一切有识之士高度重视的公共课题。 塑料制品广泛使用曾给人们带来了许多方便和巨大的财富,但是,塑料垃圾也给人们带来了许多烦恼,更给人们带来灾难。 . . . <a class="readmore-link" href="https://baijiahao.baidu.com/s?id=1642996787906966855&wfr=spider&for=pc">阅读更多</a></p>
 
                                                 </article>
 
-                                                <div id="pagination">
-                                                        <a href="#" class="btn active">1</a>
-                                                        <a href="#" class="btn">2</a>
-                                                        <a href="#" class="btn">3</a>
-                                                        <a href="#" class="btn">Next »</a>
-                                                        <a href="#" class="btn">Last »</a>
-                                                </div>
+
 
                                         </div>
                                         <!-- end of page content -->
@@ -299,22 +302,63 @@
                                         </div>
                                 </div>
                         </div>
-                        
 
+                <div class="waifu">
+                        <div class="waifu-tips"></div>
+                        <canvas id="live2d" class="live2d"></canvas>
+                        <div class="waifu-tool">
+                                <span class="fui-home"></span>
+                                <span class="fui-chat"></span>
+                                <span class="fui-eye"></span>
+                                <span class="fui-user"></span>
+                                <span class="fui-photo"></span>
+                                <span class="fui-info-circle"></span>
+                                <span class="fui-cross"></span>
+                        </div>
+                </div>
                 </footer>
            
 
                 <a href="#top" id="scroll-top"></a>
 
                 <!-- script -->
-                <script type='text/javascript' src='/js/jquery-1.8.3.min.js'></script>
+<!--                <script src="/js/sdsd.js"></script>-->
+                <script src="assets/waifu-tips.min.js?v=1.4.2"></script>
+                <script src="assets/live2d.min.js?v=1.0.5"></script>
+                <script type="text/javascript">
+                        /* 可直接修改部分参数 */
+                        live2d_settings['modelId'] = 1;                  // 默认模型 ID
+                        live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+                        live2d_settings['modelStorage'] = false;         // 不储存模型 ID
+                        live2d_settings['canCloseLive2d'] = false;       // 隐藏 关闭看板娘 按钮
+                        live2d_settings['canTurnToHomePage'] = false;    // 隐藏 返回首页 按钮
+                        live2d_settings['waifuSize'] = '280x250';        // 看板娘大小
+                        live2d_settings['waifuTipsSize'] = '250x70';    // 提示框大小
+                        live2d_settings['waifuFontSize'] = '12px';       // 提示框字体
+                        live2d_settings['waifuToolFont'] = '14px';       // 工具栏字体
+                        live2d_settings['waifuToolLine'] = '20px';       // 工具栏行高
+                        live2d_settings['waifuToolTop'] = '0px';       // 工具栏顶部边距
+                        live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+                        live2d_settings['waifuDraggableRevert'] = false;
+                        /* 在 initModel 前添加 */
+                        initModel("assets/waifu-tips.json?v=1.4.2");
+                </script>
+                <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+                <script src="/js/live2d.js"></script>
+                <script src="/js/waifu-tips.js"></script>
+<!--                <script src="/js/jquery-ui.min.js?v=1.12.1"></script>-->
+                <script type="text/javascript">
+                        live2d_settings['modelId'] = 1;
+                        live2d_settings['modelTexturesId'] = 87;
+                        initModel("json/waifu-tips.json");
+                </script>
+<!--                <script type='text/javascript' src='/js/jquery-1.8.3.min.js'></script>-->
                 <script type='text/javascript' src='/js/jquery.easing.1.34e44.js?ver=1.3'></script>
                 <script type='text/javascript' src='/js/prettyphoto/jquery.prettyPhotoaeb9.js?ver=3.1.4'></script>
                 <script type='text/javascript' src='/js/jquery.liveSearchd5f7.js?ver=2.0'></script>
-		<script type='text/javascript' src='/js/jflickrfeed.js'></script>
+		        <script type='text/javascript' src='/js/jflickrfeed.js'></script>
                 <script type='text/javascript' src='/js/jquery.formd471.js?ver=3.18'></script>
                 <script type='text/javascript' src='/js/jquery.validate.minfc6b.js?ver=1.10.0'></script>
                 <script type='text/javascript' src='/js/custom5152.js?ver=1.0'></script>
-
         </body>
 </html>

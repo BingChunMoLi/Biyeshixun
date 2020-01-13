@@ -88,11 +88,31 @@ public class UserAddachieve<T> implements Additions<T> {
         try {
             sql = "update " + String.valueOf(t[0]) +" set " + String.valueOf(t[2]) + "where " + String.valueOf(t[t.length - 2]) +" =" + (Integer)t[t.length - 1];
             preparedStatement = connection.prepareStatement(sql);
-            for (int i = 1;i < zd +1;i++){
-                System.out.println(i);
-                System.out.println("i+zd:" + i+zd);
-                preparedStatement.setString(i, String.valueOf(t[i + zd]));
+            if (String.valueOf(t[0]).equals("User")){
+                for (int i = 1;i < zd +1;i++){
+                    System.out.println(t.length);
+                    preparedStatement.setString(i, String.valueOf(t[i + 2]));
+                }
+            }else{
+                for (int i = 1;i < zd +1;i++){
+                    System.out.println(t.length);
+                    preparedStatement.setString(i, String.valueOf(t[i + zd]));
+                }
             }
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public void userupdate(Integer UID, String IP, String city){
+        Connection c = Link.getConnection();
+        String sql  ="update User set lastip = ?,lastdata = ?,lastsite = ? where uid = ?";
+        try {
+            preparedStatement = c.prepareStatement(sql);
+            preparedStatement.setString(1,IP);
+            preparedStatement.setLong(2,new Date().getTime());
+            preparedStatement.setString(3,city);
+            preparedStatement.setInt(4, UID);
             preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -189,5 +209,18 @@ public class UserAddachieve<T> implements Additions<T> {
             e.printStackTrace();
         }
         return UID;
+    }
+    public void addjijin(Integer uid,Integer value){
+        Connection c = Link.getConnection();
+        String sql  ="INSERT into Money(uid,date,value)values(?,?,?)";
+        try {
+            preparedStatement = c.prepareStatement(sql);
+            preparedStatement.setInt(1,uid);
+            preparedStatement.setLong(2,new Date().getTime());
+            preparedStatement.setInt(3,value);
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

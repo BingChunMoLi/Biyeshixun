@@ -1,3 +1,14 @@
+function IP() {
+    // 新浪接口调用查询IP及国家
+    // document.write(returnCitySN["cip"]+','+returnCitySN["cname"]);
+    document.getElementById("IP").innerHTML="IP:" + returnCitySN['cip'];
+    document.getElementById("I").innerHTML="IP:" + returnCitySN['cip'];
+    document.getElementById("P").innerHTML="IP:" + returnCitySN['cip'];
+    document.getElementById("cname").innerHTML = returnCitySN["cname"];
+}
+Window.onload = function(){
+    IP();
+}
 /*
 *
 *   Custom JavaScript
@@ -54,25 +65,25 @@ jQuery(document).ready(function(e) {
 	/*	Flickr Feed
 	/*-----------------------------------------------------------------------------------*/
 	
-	$('#basicuse').jflickrfeed({
-								limit: 9,
-								qstrings: {
-									id: '52617155@N08'
-								},
-								itemTemplate: '<a href="{{image_b}}" title="{{title}}" data-rel="prettyPhoto[flickrg]"><img src="{{image_s}}" alt="{{title}}" /></a>'
-							}, function(data){ 
-										
-											$('a[data-rel]').each(function() {
-												$(this).attr('rel', $(this).data('rel'));
-											});
-
-
-											$("a[rel^='prettyPhoto']").prettyPhoto({
-												deeplinking: false,
-												social_tools: false,
-												overlay_gallery: false
-											});
-							});
+	// $('#basicuse').jflickrfeed({
+	// 							limit: 9,
+	// 							qstrings: {
+	// 								id: '52617155@N08'
+	// 							},
+	// 							itemTemplate: '<a href="{{image_b}}" title="{{title}}" data-rel="prettyPhoto[flickrg]"><img src="{{image_s}}" alt="{{title}}" /></a>'
+	// 						}, function(data){
+	//
+	// 										$('a[data-rel]').each(function() {
+	// 											$(this).attr('rel', $(this).data('rel'));
+	// 										});
+    //
+    //
+	// 										$("a[rel^='prettyPhoto']").prettyPhoto({
+	// 											deeplinking: false,
+	// 											social_tools: false,
+	// 											overlay_gallery: false
+	// 										});
+	// 						});
 
 
     /*-----------------------------------------------------------------------------------*/
@@ -284,9 +295,9 @@ jQuery(document).ready(function(e) {
     /*-----------------------------------------------------------------------------------*/
     /*	Search Form Validation
      /*-----------------------------------------------------------------------------------*/
-    $('#search-form').validate({
-        errorLabelContainer: $("#search-error-container")
-    });
+    // $('#search-form').validate({
+    //     errorLabelContainer: $("#search-error-container")
+    // });
 	
 	
 	/*-----------------------------------------------------------------------------------*/

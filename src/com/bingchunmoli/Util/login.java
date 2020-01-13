@@ -31,11 +31,26 @@ public class login extends HttpServlet {
                     password = SHA1.getSha1(password);
                     boolean a = user.userquery("User",username,password);
                     if(a){
-                        int uid = user.useruid("User",username);
-                        session.setAttribute("User",uid);
-                        Cookie cookie = new Cookie("User",String.valueOf(uid));
-                        cookie.setMaxAge(60 * 60 * 24);
-                        response.addCookie(cookie);
+                        if (username.equals("username")){
+                            int uid = user.useruid("User",username);
+                            session.setAttribute("User",uid);
+                            Cookie cookie = new Cookie("User",String.valueOf(uid));
+                            Cookie cookie1 = new Cookie("Admin","true");
+
+                            response.addCookie(cookie);
+                            response.addCookie(cookie1);
+//                            Ajax.Ajax("/page/Administrators.html",response);
+                            out.print("/");
+                            response.setHeader("refresh", "1;url=/page/Administrators.html");
+                        }else{
+                            int uid = user.useruid("User",username);
+                            session.setAttribute("User",uid);
+                            Cookie cookie = new Cookie("User",String.valueOf(uid));
+//                            cookie.setMaxAge(0);
+                            response.addCookie(cookie);
+//                            Ajax.Ajax("/",response);
+                            out.print("/");
+                        }
                     }else{
                         out.print("登录失败，密码错误");
                     }

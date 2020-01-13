@@ -1,6 +1,7 @@
 var nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", 
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+    //声明一个数组包含字母大小写数组
 ];
 var str = '';
 var verVal = drawCode();
@@ -65,6 +66,8 @@ function convertCanvasToImage (canvas) {
 
 window.onload =function(){
     resetCode();
+    document.cookie = "User=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "Admin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 // 点击图片刷新
 document.getElementById('code_img').onclick = function() {
